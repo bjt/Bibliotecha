@@ -1,0 +1,440 @@
+# Romanian translation of Drupal interface
+# License - GPL.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 5.0\n"
+"POT-Creation-Date: 2008-02-15 13:50+0100\n"
+"PO-Revision-Date: 2007-02-18 21:23+0200\n"
+"Last-Translator: Claudiu Cristea <clau.cristea@gmail.com>\n"
+"Language-Team: Romanian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.10.1\n"
+"X-Poedit-Language: Romanian\n"
+"X-Poedit-Country: ROMANIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: modules/profile/profile.admin.inc:55
+msgid "Add new field"
+msgstr "Adaugă câmp nou"
+
+#: modules/profile/profile.admin.inc:115
+msgid ""
+"No fields in this category. If this category remains empty when saved, it "
+"will be removed."
+msgstr ""
+
+#: modules/profile/profile.admin.inc:178
+msgid "edit %title"
+msgstr "modifică %title"
+
+#: modules/profile/profile.admin.inc:196
+msgid "add new %type"
+msgstr "adaugă un nou %type"
+
+#: modules/profile/profile.admin.inc:211
+msgid "Field settings"
+msgstr "Opţiuni câmp"
+
+#: modules/profile/profile.admin.inc:217
+msgid ""
+"The category the new field should be part of. Categories are used to group "
+"fields logically. An example category is \"Personal information\"."
+msgstr ""
+"Categoria căreia îi va aparţine noul câmp. Categoriile sunt utilizate pentru "
+"a grupa în mod logic câmpurile. Un exemplu de categorie ar fi \"Informaţii "
+"personale\"."
+
+#: modules/profile/profile.admin.inc:223
+msgid ""
+"The title of the new field. The title will be shown to the user. An example "
+"title is \"Favorite color\"."
+msgstr ""
+"Titlul noului câmp. Titlul va fi arătat utilizatorului. Un exemplu ar putea "
+"fi \"Culoare preferată\"."
+
+#: modules/profile/profile.admin.inc:227
+msgid "Form name"
+msgstr "Nume formă"
+
+#: modules/profile/profile.admin.inc:229
+msgid ""
+"The name of the field. The form name is not shown to the user but used "
+"internally in the HTML code and URLs.\n"
+"Unless you know what you are doing, it is highly recommended that you prefix "
+"the form name with <code>profile_</code> to avoid name clashes with other "
+"fields. Spaces or any other special characters except dash (-) and "
+"underscore (_) are not allowed. An example name is \"profile_favorite_color"
+"\" or perhaps just \"profile_color\"."
+msgstr ""
+"Numele câmpului. Numele de formular nu este arătat utilizatorului dare este "
+"utilizat intern de codul HTML şi URL-uri.\n"
+"Pentru a evita suprapunerile cu alte câmpuri este recomandat cu tărie să "
+"prefixaţi numele de formular cu <code>profile_</code>. Nu sunt permise "
+"spaţii sau orice alt caracter special cu excepţia liniuţei (-) şi a liniuţei "
+"de subliniere (_). Un exemplu de nume este \"profile_favorite_color\" sau "
+"poate doar \"profile_color\". "
+
+#: modules/profile/profile.admin.inc:234
+msgid "Explanation"
+msgstr "Explicaţie"
+
+#: modules/profile/profile.admin.inc:236
+msgid ""
+"An optional explanation to go with the new field. The explanation will be "
+"shown to the user."
+msgstr ""
+"O explicaţie facultativă pentru noul câmp. Explicaţia va fi afişată "
+"utilizatorului."
+
+#: modules/profile/profile.admin.inc:240
+msgid "Selection options"
+msgstr "Opţiuni de selecţie"
+
+#: modules/profile/profile.admin.inc:242
+msgid ""
+"A list of all options. Put each option on a separate line. Example options "
+"are \"red\", \"blue\", \"green\", etc."
+msgstr ""
+"O listă cu toate opţiunile. Puneţi fiecare opţiune pe o linie separată. "
+"Opţiuni de exemplu sunt \"red\", \"blue\", \"green\", etc."
+
+#: modules/profile/profile.admin.inc:246
+msgid "Visibility"
+msgstr "Vizibilitate"
+
+#: modules/profile/profile.admin.inc:248
+msgid ""
+"Hidden profile field, only accessible by administrators, modules and themes."
+msgstr ""
+"Câmp profil ascuns, accesibil doar administratorilor, modulelor şi temelor."
+
+#: modules/profile/profile.admin.inc:248
+msgid "Private field, content only available to privileged users."
+msgstr ""
+"Câmp privat, conţinutul este disponibil doar utilizatorilor privilegiaţi."
+
+#: modules/profile/profile.admin.inc:248
+msgid ""
+"Public field, content shown on profile page but not used on member list "
+"pages."
+msgstr ""
+"Câmp public, conţinutul este arătat pe pagina profil dar nu este utilizat pe "
+"pagina cu lista de membri."
+
+#: modules/profile/profile.admin.inc:248
+msgid "Public field, content shown on profile page and on member list pages."
+msgstr ""
+"Câmp public, conţinutul este afişat pe pagina profilului şi pe pagina listei "
+"membrilor."
+
+#: modules/profile/profile.admin.inc:252;259
+msgid "Page title"
+msgstr "Titlul paginii"
+
+#: modules/profile/profile.admin.inc:254
+msgid ""
+"To enable browsing this field by value, enter a title for the resulting "
+"page. The word <code>%value</code> will be substituted with the "
+"corresponding value. An example page title is \"People whose favorite color "
+"is %value\". This is only applicable for a public field."
+msgstr ""
+"Pentru a permite căutarea după valoarea acestui câmp, introduceţi un titlu "
+"pentru pagina rezultat. Cuvântul <code>%value</code> va fi substituit cu "
+"valoarea corespunzătoare. Exemplu: titlul paginii este \"Membrii a căror "
+"culoare favorită este %value\". Acesta se aplică doar câmpurilor publice."
+
+#: modules/profile/profile.admin.inc:261
+msgid ""
+"To enable browsing this field by value, enter a title for the resulting "
+"page. An example page title is \"People who are employed\". This is only "
+"applicable for a public field."
+msgstr ""
+"Pentru a permite căutarea după valoarea acestui câmp, introduceţi un titlu "
+"pentru pagina rezultat. Un exemplu este \"Persoanel care sunt angajate\". Se "
+"aplică doar unui câmp public."
+
+#: modules/profile/profile.admin.inc:267
+msgid ""
+"The weights define the order in which the form fields are shown. Lighter "
+"fields \"float up\" towards the top of the category."
+msgstr ""
+"Greutăţile indică ordinea în care câmpurile sunt afişate. Cele mai \"uşoare"
+"\" se ridică la suprafaţă, în partea superioară a categoriei."
+
+#: modules/profile/profile.admin.inc:270
+msgid "Form will auto-complete while user is typing."
+msgstr "Formularul se autocompletează în timp ce utilizatorul tastează."
+
+#: modules/profile/profile.admin.inc:274
+msgid "The user must enter a value."
+msgstr "Utilizatorul trebuie să introducă o valoare."
+
+#: modules/profile/profile.admin.inc:278
+msgid "Visible in user registration form."
+msgstr "Vizibil în forma de înregistrare pentru noii utilizatori."
+
+#: modules/profile/profile.admin.inc:282
+msgid "Save field"
+msgstr "Salvează câmp"
+
+#: modules/profile/profile.admin.inc:293
+msgid ""
+"The specified form name contains one or more illegal characters. Spaces or "
+"any other special characters except dash (-) and underscore (_) are not "
+"allowed."
+msgstr ""
+"Numele de formular specificat conţine unul sau mai multe caractere ilegale. "
+"Nu sunt permise spaţiile sau orice alt caracter special cu excepţia liniuţei "
+"(-) şi liniuţei de subliniere (_)."
+
+#: modules/profile/profile.admin.inc:297
+msgid "The specified form name is reserved for use by Drupal."
+msgstr "Numele de formular specificat este rezervat de Drupal."
+
+#: modules/profile/profile.admin.inc:304
+msgid "The specified category name is reserved for use by Drupal."
+msgstr "Numele categoriei este rezervat de către sistemul Drupal."
+
+#: modules/profile/profile.admin.inc:316
+msgid "The specified title is already in use."
+msgstr "Titlul specificat este deja folosit."
+
+#: modules/profile/profile.admin.inc:319
+msgid "The specified name is already in use."
+msgstr "Numele specificat este deja folosit."
+
+#: modules/profile/profile.admin.inc:344
+msgid "The field has been created."
+msgstr "Câmpul a fost creat."
+
+#: modules/profile/profile.admin.inc:350
+msgid "The field has been updated."
+msgstr "Câmpul a fost actualizat."
+
+#: modules/profile/profile.admin.inc:372
+msgid "Are you sure you want to delete the field %field?"
+msgstr "Sigur doriţii să ştergeţi câmpul %field?"
+
+#: modules/profile/profile.admin.inc:373
+msgid ""
+"This action cannot be undone. If users have entered values into this field "
+"in their profile, these entries will also be deleted. If you want to keep "
+"the user-entered data, instead of deleting the field you may wish to <a href="
+"\"@edit-field\">edit this field</a> and change it to a hidden profile field "
+"so that it may only be accessed by administrators."
+msgstr ""
+"Acestă acţiune este ireversibilă. Dacă utilizatorii au introdus valor în "
+"acest câmp, aceste valori vor fi şterse de asemenea. Dacă doriţi datele "
+"introduse de utilizatori, <a href=\"@edit-field\">modificaţi acest câmp</a> "
+"şi schimbaţi-l într-un câmp profil ascuns în aşa fel încât să fie accesibil "
+"doar de către administratori."
+
+#: modules/profile/profile.admin.inc:386
+msgid "The field %field has been deleted."
+msgstr "Câmpul %field a fost şters."
+
+#: modules/profile/profile.admin.inc:345;387 modules/profile/profile.module:0
+msgid "profile"
+msgstr "profil"
+
+#: modules/profile/profile.admin.inc:345
+msgid "Profile field %field added under category %category."
+msgstr "Câmpul %field din profil a fost asociat categoriei %category."
+
+#: modules/profile/profile.admin.inc:387
+msgid "Profile field %field deleted."
+msgstr "Am şters câmpul %field din profil."
+
+#: modules/profile/profile.pages.inc:102 modules/profile/profile.module:80
+msgid "User list"
+msgstr "Listă utilizatori"
+
+#: modules/profile/profile.module:36
+msgid "The following types of fields can be added to a user profile:"
+msgstr ""
+
+#: modules/profile/profile.module:37;541
+msgid "single-line textfield"
+msgstr "câmp text cu un singur rând"
+
+#: modules/profile/profile.module:38;542
+msgid "multi-line textfield"
+msgstr "câmp text cu rânduri multiple"
+
+#: modules/profile/profile.module:39;543
+msgid "checkbox"
+msgstr "căsuţă de selecţie"
+
+#: modules/profile/profile.module:40;544
+msgid "list selection"
+msgstr "selector de tip listă"
+
+#: modules/profile/profile.module:41;545
+msgid "freeform list"
+msgstr "listă liberă"
+
+#: modules/profile/profile.module:43;547
+msgid "date"
+msgstr "dată"
+
+#: modules/profile/profile.module:47
+msgid ""
+"This page displays a list of the existing custom profile fields to be "
+"displayed on a user's <em>My Account</em> page. To provide structure, "
+"similar or related fields may be placed inside a category. To add a new "
+"category (or edit an existing one), edit a profile field and provide a new "
+"category name. To change the category of a field or the order of fields "
+"within a category, grab a drag-and-drop handle under the Title column and "
+"drag the field to a new location in the list. (Grab a handle by clicking and "
+"holding the mouse while hovering over a handle icon.) Remember that your "
+"changes will not be saved until you click the <em>Save configuration</em> "
+"button at the bottom of the page."
+msgstr ""
+
+#: modules/profile/profile.module:137
+msgid "Author information"
+msgstr "Informaţii despre autor"
+
+#: modules/profile/profile.module:148
+msgid "Link to full user profile"
+msgstr "Link către profilul întreg al utilizatorului."
+
+#: modules/profile/profile.module:150
+msgid "Profile fields to display"
+msgstr "Câmpurile din profil care vor fi afişate"
+
+#: modules/profile/profile.module:153
+msgid ""
+"Select which profile fields you wish to display in the block. Only fields "
+"designated as public in the <a href=\"@profile-admin\">profile field "
+"configuration</a> are available."
+msgstr ""
+"Selectaţi câmpurile profil afişate în bloc. Sunt disponibile doar câmpurile "
+"definite ca şi publice în <a href=\"@profile-admin\">configurare câmp "
+"profil</a>."
+
+#: modules/profile/profile.module:185
+msgid "View full user profile"
+msgstr "Afişează profilul întreg al utilizatorului."
+
+#: modules/profile/profile.module:190
+msgid "About %name"
+msgstr "Despre %name"
+
+#: modules/profile/profile.module:333
+msgid ""
+"Put each item on a separate line or separate them by commas. No HTML allowed."
+msgstr ""
+"Scrieţi fiecare valoare pe câte un rând nou, sau separaţi-le prin virgulă. "
+"Nu este permis codul HTML."
+
+#: modules/profile/profile.module:435
+msgid "The value provided for %field is not a valid URL."
+msgstr "Valoarea introdusă în %field nu reprezintă o adresă URL validă."
+
+#: modules/profile/profile.module:440
+msgid "The field %field is required."
+msgstr "Câmpul %field este obligatoriu."
+
+#: modules/profile/profile.module:87
+msgid "Profiles"
+msgstr "Profile"
+
+#: modules/profile/profile.module:88
+msgid "Create customizable fields for your users."
+msgstr "Crează câmpuri personalizate pentru utilizatori."
+
+#: modules/profile/profile.module:95
+msgid "Add field"
+msgstr "Adaugă câmp"
+
+#: modules/profile/profile.module:102
+msgid "Profile category autocomplete"
+msgstr "Auto-completare categorie profil"
+
+#: modules/profile/profile.module:108
+msgid "Edit field"
+msgstr "Modifică câmp"
+
+#: modules/profile/profile.module:115
+msgid "Delete field"
+msgstr "Şterge câmp"
+
+#: modules/profile/profile.module:122
+msgid "Profile autocomplete"
+msgstr "Auto-completare profil"
+
+#: modules/profile/profile.install:27
+msgid "Stores profile field information."
+msgstr ""
+
+#: modules/profile/profile.install:32
+msgid "Primary Key: Unique profile field ID."
+msgstr ""
+
+#: modules/profile/profile.install:45
+msgid "Internal name of the field used in the form HTML and URLs."
+msgstr ""
+
+#: modules/profile/profile.install:50
+msgid "Explanation of the field to end users."
+msgstr ""
+
+#: modules/profile/profile.install:56
+msgid "Profile category that the field will be grouped under."
+msgstr ""
+
+#: modules/profile/profile.install:62
+msgid "Title of page used for browsing by the field's value"
+msgstr ""
+
+#: modules/profile/profile.install:68
+msgid "Type of form field."
+msgstr ""
+
+#: modules/profile/profile.install:75
+msgid "Weight of field in relation to other profile fields."
+msgstr ""
+
+#: modules/profile/profile.install:82
+msgid "Whether the user is required to enter a value. (0 = no, 1 = yes)"
+msgstr ""
+
+#: modules/profile/profile.install:89
+msgid ""
+"Whether the field is visible in the user registration form. (1 = yes, 0 = no)"
+msgstr ""
+
+#: modules/profile/profile.install:96
+msgid ""
+"The level of visibility for the field. (0 = hidden, 1 = private, 2 = public "
+"on profile but not member list pages, 3 = public on profile and list pages)"
+msgstr ""
+
+#: modules/profile/profile.install:103
+msgid "Whether form auto-completion is enabled. (0 = disabled, 1 = enabled)"
+msgstr ""
+
+#: modules/profile/profile.install:108
+msgid "List of options to be used in a list selection field."
+msgstr ""
+
+#: modules/profile/profile.install:117
+msgid "Stores values for profile fields."
+msgstr ""
+
+#: modules/profile/profile.install:124
+msgid "The {profile_fields}.fid of the field."
+msgstr ""
+
+#: modules/profile/profile.install:131
+msgid "The {users}.uid of the profile user."
+msgstr ""
+
+#: modules/profile/profile.install:136
+msgid "The value for the field."
+msgstr ""

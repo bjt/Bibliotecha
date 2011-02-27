@@ -1,0 +1,155 @@
+<?php
+
+/**
+ *
+ */
+
+require dirname(__FILE__) . '/feedback.form.inc';
+
+/**
+ * Implementation of hook_menu().
+ */
+function bjt_browsing_menu(){
+  $items['homepage'] = array(
+    'title' => 'Homepage',
+    'page callback' => 'bjt_browsing_homepage',
+    'description' => '',
+    'access arguments' => array('access content'),
+    'access callback' => 'user_access',
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  $items['despre'] = array(
+    'title' => 'Despre Noi',
+    'page callback' => 'bjt_browsing_about',
+    'description' => '',
+    'access arguments' => array('access content'),
+    'access callback' => 'user_access',
+    'type' => MENU_NORMAL_ITEM,
+    );
+  $items['feedback'] = array(
+    'title' => 'Feedback',
+    'description' => '',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('bjt_feedback_form'),
+    'access callback' => true,
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+
+/**
+ * Implementation of hook_menu_alter().
+ */
+function bjt_browsing_menu_alter($items){
+  $items['search'] = array(
+    'title' => 'Search',
+    'page callback' => '_bjt_search_view',
+    'access arguments' => array('search content'),
+    'type' => MENU_SUGGESTED_ITEM,
+  );
+  $items['search/node'] = array(
+    'title' => 'Search',
+    'page callback' => '_bjt_search_view',
+    'access arguments' => array('search content'),
+    'type' => MENU_SUGGESTED_ITEM,
+  );
+  $items['search/node/%menu_tail'] = array(
+    'title callback' => 'module_invoke',
+    'title arguments' => array('node', 'search', 'name', TRUE),
+    'page callback' => '_bjt_search_view',
+    'page arguments' => array('node'),
+    'access callback' => '_search_menu',
+    'access arguments' => array('node'),
+    'type' => MENU_LOCAL_TASK,
+    'parent' => 'search',
+  );
+  return $items;
+}
+
+function _bjt_search_view($type = 'node'){
+  // Search form submits with POST but redirects to GET. This way we can keep
+  // the search query URL clean as a whistle:
+  // search/type/keyword+keyword
+  if (!isset($_POST['form_id'])) {
+    if ($type == '') {
+      // Note: search/node can not be a default tab because it would take on the
+      // path of its parent (search). It would prevent remembering keywords when
+      // switching tabs. This is why we drupal_goto to it from the parent instead.
+      drupal_goto('search/node');
+    }
+
+    $keys = search_get_keys();
+    // Only perform search if there is non-whitespace search term:
+    $results = '';
+    if (trim($keys)) {
+      // Log the search keys:
+      watchdog('search', '%keys (@type).', array('%keys' => $keys, '@type' => module_invoke($type, 'search', 'name')), WATCHDOG_NOTICE, l(t('results'), 'search/'. $type .'/'. $keys));
+
+      // Collect the search results:
+      $results = search_data($keys, $type);
+
+      if ($results) {
+        $results = theme('box', t('Search results'), $results);
+      }
+      else {
+        $results = theme('box', t('Your search yielded no results'), search_help('search#noresults', drupal_help_arg()));
+      }
+    }
+
+    // Construct the search form.
+    //$output = drupal_get_form('search_form', NULL, $keys, $type);
+    $output .= $results;
+
+    return $output;
+  }
+
+  //return drupal_get_form('search_form', NULL, empty($keys) ? '' : $keys, $type);
+  return ' ';
+}
+
+/**
+ * Implementation of hook_theme().
+ */
+function bjt_browsing_theme(){
+  return array(
+    'bjt-home' => array(
+      'template' => 'bjt-home',
+      'path' => drupal_get_path('theme', 'bjt'),
+    ),
+    'bjt-about' => array(
+      'template' => 'bjt-about',
+      'path' => drupal_get_path('theme', 'bjt'),
+    ),
+    'bjt-feedback' => array(
+      'template' => 'bjt-feedback',
+      'path' => drupal_get_path('theme', 'bjt'),
+    ),
+  );
+}
+
+/**
+ * Page callback for homepage.
+ */
+function bjt_browsing_homepage(){
+
+  return theme('bjt-home');
+}
+
+/**
+ * Page callback for about.
+ */
+function bjt_browsing_about(){
+
+
+  return theme('bjt-about');
+}
+
+
+function bjt_browsing_db_rewrite_sql($query, $primary_table, $primary_field, $args) {
+  if ($query == '' && $primary_table == 'n' && $primary_field = 'nid' && empty($args)) {
+    $where = " n.type NOT IN ('page', 'story', 'webform') ";
+    return array('where' => $where);
+  }
+}

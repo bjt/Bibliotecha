@@ -1,0 +1,307 @@
+# Romanian translation of Drupal interface
+# License - GPL.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 5.0\n"
+"POT-Creation-Date: 2008-02-15 13:50+0100\n"
+"PO-Revision-Date: 2007-02-18 21:23+0200\n"
+"Last-Translator: Claudiu Cristea <clau.cristea@gmail.com>\n"
+"Language-Team: Romanian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.10.1\n"
+"X-Poedit-Language: Romanian\n"
+"X-Poedit-Country: ROMANIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: modules/forum/forum-list.tpl.php:38
+msgid "Topics"
+msgstr "Subiecte"
+
+#: modules/forum/forum-list.tpl.php:39
+msgid "Posts"
+msgstr "Articole"
+
+#: modules/forum/forum-list.tpl.php:40
+msgid "Last post"
+msgstr "Ultima adăugare"
+
+#: modules/forum/forum-submitted.tpl.php:21
+msgid "@time ago<br />by !author"
+msgstr "în urmă cu @time <br />de către !author"
+
+#: modules/forum/forum-topic-navigation.tpl.php:29
+msgid "Go to previous forum topic"
+msgstr "Subiectul precedent din forum"
+
+#: modules/forum/forum-topic-navigation.tpl.php:32
+msgid "Go to next forum topic"
+msgstr "Următorul subiect din forum"
+
+#: modules/forum/forum.admin.inc:38
+msgid "Forum name"
+msgstr "Numele forumului"
+
+#: modules/forum/forum.admin.inc:54
+msgid ""
+"Forums are displayed in ascending order by weight (forums with equal weights "
+"are displayed alphabetically)."
+msgstr ""
+
+#: modules/forum/forum.admin.inc:75
+msgid "forum container"
+msgstr "container forum"
+
+#: modules/forum/forum.admin.inc:79 modules/forum/forum.module:0
+msgid "forum"
+msgstr "forum"
+
+#: modules/forum/forum.admin.inc:90
+msgid "Created new @type %term."
+msgstr "Noul @type %term a fost creat."
+
+#: modules/forum/forum.admin.inc:93
+msgid "The @type %term has been updated."
+msgstr "@type %term a fost actualizat."
+
+#: modules/forum/forum.admin.inc:116
+msgid "Container name"
+msgstr "Numele containerului"
+
+#: modules/forum/forum.admin.inc:128
+msgid "Description and guidelines for forums within this container."
+msgstr ""
+
+#: modules/forum/forum.admin.inc:136
+msgid ""
+"Containers are displayed in ascending order by weight (containers with equal "
+"weights are displayed alphabetically)."
+msgstr ""
+
+#: modules/forum/forum.admin.inc:168
+msgid "Are you sure you want to delete the forum %name?"
+msgstr "Sigur doreşti să ştergi forumul %name?"
+
+#: modules/forum/forum.admin.inc:176
+msgid ""
+"The forum %term and all sub-forums and associated posts have been deleted."
+msgstr ""
+"Comentariul şi toate subforumurile sau replicile asociate au fost şterse."
+
+#: modules/forum/forum.admin.inc:192
+msgid "Hot topic threshold"
+msgstr "Pragul pentru un subiect fierbinte"
+
+#: modules/forum/forum.admin.inc:199
+msgid "Topics per page"
+msgstr "Subiecte pe pagină"
+
+#: modules/forum/forum.admin.inc:204
+msgid "Posts - most active first"
+msgstr "Articole - cele mai active la început"
+
+#: modules/forum/forum.admin.inc:204
+msgid "Posts - least active first"
+msgstr "Articole - cele mai puţin active la început"
+
+#: modules/forum/forum.admin.inc:206
+msgid "Default order"
+msgstr "Ordinea predefinită"
+
+#: modules/forum/forum.admin.inc:230
+msgid "edit container"
+msgstr "editează containerul"
+
+#: modules/forum/forum.admin.inc:233
+msgid "edit forum"
+msgstr "editează forumul"
+
+#: modules/forum/forum.admin.inc:177
+msgid "forum: deleted %term and all its sub-forums and associated posts."
+msgstr ""
+"forum: %term a fost şters, precum şi toate sub-forumurile sau replicile "
+"asociate."
+
+#: modules/forum/forum.module:16
+msgid ""
+"A threaded discussion occurs as people leave comments on a forum topic (or "
+"on other comments within that topic). A forum topic is contained within a "
+"forum, which may hold many similar or related forum topics. Forums are "
+"(optionally) nested within a container, which may hold many similar or "
+"related forums. Both containers and forums may be nested within other "
+"containers and forums, and provide structure for your message board. By "
+"carefully planning this structure, you make it easier for users to find and "
+"comment on a specific forum topic."
+msgstr ""
+
+#: modules/forum/forum.module:17
+msgid "When administering a forum, note that:"
+msgstr ""
+
+#: modules/forum/forum.module:18
+msgid ""
+"a forum topic (and all of its comments) may be moved between forums by "
+"selecting a different forum while editing a forum topic."
+msgstr ""
+
+#: modules/forum/forum.module:19
+msgid ""
+"when moving a forum topic between forums, the <em>Leave shadow copy</em> "
+"option creates a link in the original forum pointing to the new location."
+msgstr ""
+
+#: modules/forum/forum.module:20
+msgid ""
+"selecting <em>Read only</em> under <em>Comment settings</em> while editing a "
+"forum topic will lock (prevent new comments) on the thread."
+msgstr ""
+
+#: modules/forum/forum.module:21
+msgid ""
+"selecting <em>Disabled</em> under <em>Comment settings</em> while editing a "
+"forum topic will hide all existing comments on the thread, and prevent new "
+"ones."
+msgstr ""
+
+#: modules/forum/forum.module:25
+msgid ""
+"This page displays a list of existing forums and containers. Containers "
+"(optionally) hold forums, and forums hold forum topics (a forum topic is the "
+"initial post to a threaded discussion). To provide structure, both "
+"containers and forums may be placed inside other containers and forums. To "
+"rearrange forums and containers, grab a drag-and-drop handle under the "
+"<em>Name</em> column and drag the forum or container to a new location in "
+"the list. (Grab a handle by clicking and holding the mouse while hovering "
+"over a handle icon.) Remember that your changes will not be saved until you "
+"click the <em>Save</em> button at the bottom of the page."
+msgstr ""
+
+#: modules/forum/forum.module:31
+msgid ""
+"These settings allow you to adjust the display of your forum topics. The "
+"content types available for use within a forum may be selected by editing "
+"the <em>Content types</em> on the <a href=\"@forum-vocabulary\">forum "
+"vocabulary page</a>."
+msgstr ""
+
+#: modules/forum/forum.module:230
+msgid ""
+"The item %forum is only a container for forums. Please select one of the "
+"forums below it."
+msgstr ""
+"Articolul %forum este doar un container pentru forumuri. Alege unul din "
+"forumurile de mai jos."
+
+#: modules/forum/forum.module:296
+msgid "Forum topic"
+msgstr "Subiectul forumului"
+
+#: modules/forum/forum.module:298
+msgid ""
+"A <em>forum topic</em> is the initial post to a new discussion thread within "
+"a forum."
+msgstr ""
+
+#: modules/forum/forum.module:361
+msgid ""
+"This is the designated forum vocabulary. Some of the normal vocabulary "
+"options have been removed."
+msgstr ""
+"Acesta este vocabularul alocat forumului. Unele opţiuni specifice "
+"vocabularului au fost înlăturate."
+
+#: modules/forum/forum.module:403;419
+msgid "Active forum topics"
+msgstr "Subiectele active ale forumului"
+
+#: modules/forum/forum.module:404;426
+msgid "New forum topics"
+msgstr "Subiectele noi din forum"
+
+#: modules/forum/forum.module:408
+msgid "Number of topics"
+msgstr "Numărul subiectului"
+
+#: modules/forum/forum.module:435
+msgid "Read the latest forum topics."
+msgstr "Citeşte ultimele subiecte."
+
+#: modules/forum/forum.module:454
+msgid "Leave shadow copy"
+msgstr "Lasă o umbră"
+
+#: modules/forum/forum.module:454
+msgid ""
+"If you move this topic, you can leave a link in the old forum to the new "
+"forum."
+msgstr ""
+"Dacă muţi acest subiect, poţi lăsa un link către noua locaţie în vechiul "
+"forum."
+
+#: modules/forum/forum.module:561
+msgid "Topic"
+msgstr "Subiect"
+
+#: modules/forum/forum.module:563
+msgid "Created"
+msgstr "Creat"
+
+#: modules/forum/forum.module:564
+msgid "Last reply"
+msgstr "Ultima replică"
+
+#: modules/forum/forum.module:726
+msgid "No forums defined"
+msgstr "Nu sunt forumuri definite"
+
+#: modules/forum/forum.module:812
+msgid "This topic has been moved"
+msgstr "Acest subiect a fost mutat"
+
+#: modules/forum/forum.module:322
+msgid "create forum topics"
+msgstr "creează subiecte în forumuri"
+
+#: modules/forum/forum.module:322
+msgid "edit own forum topics"
+msgstr "modifică subiectele proprii"
+
+#: modules/forum/forum.module:322
+msgid "administer forums"
+msgstr "administrează forumuri"
+
+#: modules/forum/forum.module:86;93 modules/forum/forum.install:27;116
+msgid "Forums"
+msgstr "Forumuri"
+
+#: modules/forum/forum.module:94
+msgid "Control forums and their hierarchy and change forum settings."
+msgstr ""
+"Controlează forumurile şi ierarhia lor şi modifică configuraţia forumului."
+
+#: modules/forum/forum.module:106
+msgid "Add container"
+msgstr "Adaugă container"
+
+#: modules/forum/forum.module:114
+msgid "Add forum"
+msgstr "Adaugă forum"
+
+#: modules/forum/forum.module:136
+msgid "Edit container"
+msgstr "Editează containerul"
+
+#: modules/forum/forum.module:143
+msgid "Edit forum"
+msgstr "Editează forumul"
+
+#: modules/forum/forum.install:69
+msgid "Stores the relationship of nodes to forum terms."
+msgstr ""
+
+#: modules/forum/forum.install:90
+msgid "The {term_data}.tid of the forum term assigned to the node."
+msgstr ""

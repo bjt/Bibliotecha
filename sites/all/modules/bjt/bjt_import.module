@@ -1,0 +1,206 @@
+<?php
+/**
+ * @file
+ * Importă informaţiile despre materiale din XML în db
+ */
+
+/**
+ * Implementation of hook_menu()
+ */
+function bjt_import_menu(){
+  $items['admin/bjt/importer'] = array(
+    'title' => 'Importă XML',
+    'page callback' => 'bjt_import_all',
+    'description' => 'Scanează folderele predefinite dupa XML-ul şi salvează datele ca node-uri',
+    'access arguments' => array('access content'),
+    'access callback' => 'user_access',
+    'type' => MENU_NORMAL_ITEM,
+  );
+  return $items;
+}
+
+
+/**
+ * Implementation of hook_node_info().
+ */
+function bjt_import_node_info(){
+  return array(
+    'doc' => array(
+      'name' => 'Document',
+      'module' => 'bjt_import',
+      'description' => '',
+      'has_title' => true,
+      'has_body' => true,
+    ),
+  );
+}
+
+/**
+ * Implementation of hook_access().
+ */
+function bjt_import_access($op, $node, $account){
+
+  return true;
+}
+
+
+/**
+ * Implementation of hook_nodeapi().
+ */
+function bjt_import_nodeapi(&$node, $op, $a3 = NULL, $a4 = NUL){
+  switch($op){
+    case 'load':
+      if ($node->type == 'doc'){
+        // extract all attributes
+        $return = array();
+        $fields = db_query('SELECT * FROM {bjt_data} WHERE `nid`=%d', $node->nid);
+        $teaser = db_result(db_query("SELECT teaser FROM {node_revisions} WHERE `nid`=%d AND `vid`=%d", $node->nid, $node->vid));
+        $return['bjt']['teaser'] = $teaser;
+        while($field = db_fetch_array($fields)){
+          $return['bjt'][$field['data_name']][] = $field['data_value'];
+        }
+        return $return;
+      }
+      break;
+  }
+}
+
+
+
+/**
+ * Page callback for import page.
+ */
+function bjt_import_all(){
+  global $user;
+
+  $path = "xml_data/" . (!empty($_GET['colectie']) ? $_GET['colectie']  .'/' : '') ;
+  $dh = opendir($path);
+
+  if (!$dh) {
+    return "Nu s-a reusit deschiderea directorului.";
+  }
+
+  $f = readdir($dh);
+
+  if (empty($_GET['colectie'])){
+    // afisam lista de colectie cu link pentru import
+    $html = '';
+    while ($f){
+      $html .= "";
+      if ( $f != '.' && $f != '..' && is_dir($path.$f)) {
+        $html .= '<a href="'.url('admin/bjt/importer', array('query' => array('colectie' => $f))) .'">'.drupal_ucfirst($f).'</a><br/>';
+      }
+      $f = readdir($dh);
+    }
+    return $html;
+  }
+  else {
+    set_time_limit(0);
+    $start = microtime(true);
+    while($f){
+      if ( strcmp($f,'.')!=0 && strcmp($f,'..')!=0){
+        $xml = simplexml_load_file($path.$f);
+
+        $data = array(
+                'dc' => _filter_nodes_by_lang($xml->children('http://purl.org/dc/elements/1.1/')),
+                'europeana' => _filter_nodes_by_lang($xml->children('http://www.europeana.eu/schemas/ese/'))
+        );
+        // save node using $data
+        $node = new stdClass;
+        $node->title = $data['dc']['title'][0];
+
+        $node->created = time();
+        $node->changed = time();
+        $node->type = 'doc';
+        $node->status = 1;
+        $node->promote = 1;
+        $node->uid = $user->uid;
+        $description = isset($data['dc']['description']) ?
+          (is_array($data['dc']['description']) ? implode('; ', $data['dc']['description']) : $data['dc']['description'])
+          : '';
+        $subjects = is_array($data['dc']['subject']) ? implode('; ', $data['dc']['subject']) : $data['dc']['subject'] ;
+        $contributors = implode('; ', array_unique($data['dc']['contributor']));
+        $sources = implode('; ', array_unique($data['dc']['source']));
+        $creator = implode('; ', array_unique($data['dc']['creator']));
+
+        //var_export($data);
+        //exit;
+        $node->teaser = $data['europeana']['isShownBy'][0];
+        $node->body =
+<<<EOD
+  <h1>$node->title</h1>
+  <h2>{$description}</h2>
+  <h3>$creator</h3>
+  <h3>$subjects</h3>
+  <h4>$sources</h4>
+  <h4>$contributors</h4>
+  {$data['dc']['identifier'][0]}
+  {$data['dc']['date'][0]}
+EOD
+          ;
+
+          empty($node->title) and drupal_set_message("$f : no face no name no number!");
+
+        // Cautam daca mai exista deja un nod cu id-ul respectiv
+        $nid = db_result(db_query("SELECT nid FROM bjt_data WHERE data_name='identifier' AND data_value='%s'", $data['dc']['identifier']));
+        $vid = db_result(db_query("SELECT vid FROM {node} WHERE nid=%d", $nid));
+        $nid and $node->nid = $nid and $node->vid = $vid and db_query('delete from bjt_data where nid = %d', $nid);
+
+        node_save($node);
+
+        foreach(array(
+          'description' => $description,
+          'identifier' => $data['dc']['identifier'],
+          'date' => $data['dc']['date'],
+          'type' => $data['europeana']['type'],
+          'colectie' => $_GET['colectie']
+        ) as $data_name => $data_value){
+
+          db_query("INSERT INTO {bjt_data} (nid, data_name, data_value)
+                    VALUES (%d, '%s','%s')",
+                    $node->nid, $data_name, is_array($data_value) ? $data_value[0] : $data_value);
+        }
+
+        foreach(array('subject', 'contributor', 'source', 'creator') as $many_fields){
+          foreach($data['dc'][$many_fields] as $many_fields_value) {
+            //db_save($node->nid, $many_fields, $many_fields_value);
+            db_query("INSERT INTO {bjt_data} (nid, data_name, data_value)
+                      VALUES (%d, '%s','%s')",
+                      $node->nid, $many_fields, $many_fields_value);
+          }
+        }
+
+
+
+        //break;
+      }
+
+      $f = readdir($dh);
+    }
+
+    $duration = microtime(true) - $start;
+    return 'Taxare pe ora pentru: ' . $duration . 's';
+  } // end if else (empty($_GET['colectie'])
+
+  closedir($dh);
+
+  return ''
+    . print_r($data, 1)
+    .'aaa';
+}
+
+function _filter_nodes_by_lang($nodes, $lang = 'ro'){
+
+  $return = array();
+
+  foreach($nodes as $key => $node){
+    $lang = $node->attributes('xml', 1)->lang;
+
+    if(empty($lang) or $lang == 'ro' or $key == 'date')
+      $return[$key][] = (string)$node;
+
+  }
+
+
+  return $return;
+}

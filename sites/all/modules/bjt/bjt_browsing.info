@@ -1,0 +1,5 @@
+; $Id$
+name = BJT Browser
+description = "Browsing librărie virtuală"
+package = GeekMeet24
+core = 6.x

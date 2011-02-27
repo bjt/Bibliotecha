@@ -1,0 +1,272 @@
+# Romanian translation of Drupal interface
+# License - GPL.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 5.0\n"
+"POT-Creation-Date: 2008-02-15 13:50+0100\n"
+"PO-Revision-Date: 2007-02-18 21:23+0200\n"
+"Last-Translator: Claudiu Cristea <clau.cristea@gmail.com>\n"
+"Language-Team: Romanian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.10.1\n"
+"X-Poedit-Language: Romanian\n"
+"X-Poedit-Country: ROMANIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: modules/upload/upload.admin.inc:10
+msgid ""
+"The maximum allowed image size expressed as WIDTHxHEIGHT (e.g. 640x480). Set "
+"to 0 for no restriction."
+msgstr ""
+"Dimensiunile maxim admisa ale imaginii, exprimate ca LĂŢIMExÎNĂLŢIME (de ex. "
+"640x480). Puneţi 0 pentru a elimina restricţiile."
+
+#: modules/upload/upload.admin.inc:17;110
+msgid "Your PHP settings limit the maximum file size per upload to %size."
+msgstr ""
+"Configuraţia PHP limitează mărimea maximă a fişierului pe încărcare la %size."
+
+#: modules/upload/upload.admin.inc:21;24;39;42
+msgid "The %role file size limit must be a number and greater than zero."
+msgstr "Mărimea fişierului %role trebuie să fie un număr mai mare decât zero."
+
+#: modules/upload/upload.admin.inc:21;24;31
+msgid "default"
+msgstr "implicit"
+
+#: modules/upload/upload.admin.inc:31;49
+msgid ""
+"The %role maximum file size per upload is greater than the total file size "
+"allowed per user"
+msgstr ""
+"Mărimea maximă a fişierului %role pe încărcare este mai mare decât mărimea "
+"totală permisă pe utilizator"
+
+#: modules/upload/upload.admin.inc:64
+msgid "General settings"
+msgstr "Setări generale"
+
+#: modules/upload/upload.admin.inc:69
+msgid "Maximum resolution for uploaded images"
+msgstr "Rezoluţia maximă a imaginilor încărcate"
+
+#: modules/upload/upload.admin.inc:73
+msgid ""
+"The maximum allowed image size (e.g. 640x480). Set to 0 for no restriction. "
+"If an <a href=\"!image-toolkit-link\">image toolkit</a> is installed, files "
+"exceeding this value will be scaled down to fit."
+msgstr ""
+
+#: modules/upload/upload.admin.inc:74
+msgid "WIDTHxHEIGHT"
+msgstr "LĂŢIMExÎNĂLŢIME"
+
+#: modules/upload/upload.admin.inc:78
+msgid "List files by default"
+msgstr "Afişează fişiere implicit"
+
+#: modules/upload/upload.admin.inc:81
+msgid "Display attached files when viewing a post."
+msgstr ""
+
+#: modules/upload/upload.admin.inc:86
+msgid "Default permitted file extensions"
+msgstr "Extensii permise pentru fişiere"
+
+#: modules/upload/upload.admin.inc:89
+msgid ""
+"Default extensions that users can upload. Separate extensions with a space "
+"and do not include the leading dot."
+msgstr ""
+"Extensiile implicite pe care pot să le încarce utilizatorii. Separaţi "
+"extensiile cu un spaţiu şi nu includeţi punctul introductiv."
+
+#: modules/upload/upload.admin.inc:93
+msgid "Default maximum file size per upload"
+msgstr "Mărimea maximă implicită a fişierelor la o încărcare"
+
+#: modules/upload/upload.admin.inc:97
+msgid ""
+"The default maximum file size a user can upload. If an image is uploaded and "
+"a maximum resolution is set, the size will be checked after the file has "
+"been resized."
+msgstr ""
+
+#: modules/upload/upload.admin.inc:102
+msgid "Default total file size per user"
+msgstr "Mărimea totală a fişierelor pe utilizator"
+
+#: modules/upload/upload.admin.inc:106
+msgid "The default maximum size of all files a user can have on the site."
+msgstr ""
+"Mărimea maximă implicită a tuturor fişierelor pe care un utilizator poate să "
+"le aibă pe sit."
+
+#: modules/upload/upload.admin.inc:118
+msgid "Settings for @role"
+msgstr "Opţiuni pentru @role"
+
+#: modules/upload/upload.admin.inc:124
+msgid "Permitted file extensions"
+msgstr "Extensii permise pentru fişiere"
+
+#: modules/upload/upload.admin.inc:127
+msgid ""
+"Extensions that users in this role can upload. Separate extensions with a "
+"space and do not include the leading dot."
+msgstr ""
+"Extensiile pe care utilizatorii din acest rol le pot folosi. Separaţi "
+"extensiile cu un spaţiu şi nu introduceţi punctul introductiv."
+
+#: modules/upload/upload.admin.inc:131
+msgid "Maximum file size per upload"
+msgstr "Mărimea maximă fişier pe încărcare"
+
+#: modules/upload/upload.admin.inc:135
+msgid ""
+"The maximum size of a file a user can upload. If an image is uploaded and a "
+"maximum resolution is set, the size will be checked after the file has been "
+"resized."
+msgstr ""
+
+#: modules/upload/upload.admin.inc:140
+msgid "Total file size per user"
+msgstr "Mărimea totală a fişierelor pe utilizator"
+
+#: modules/upload/upload.module:21
+msgid ""
+"Users with the <a href=\"@permissions\">upload files permission</a> can "
+"upload attachments. Users with the <a href=\"@permissions\">view uploaded "
+"files permission</a> can view uploaded attachments. You can choose which "
+"post types can take attachments on the <a href=\"@types\">content types "
+"settings</a> page."
+msgstr ""
+"Utilizatorii cu <a href=\"@permissions\">permisiuni de încărcare de fişiere</"
+"a> pot încărca ataşamente. Utilizatorii cu <a href=\"@permissions"
+"\">permisiuni de vizualizare fişiere</a> pot accesa ataşamentele. Puteţi "
+"alege ce tipuri de articole pot avea ataşamente în pagina <a href=\"@types"
+"\">setări de tipuri de conţinut</a>."
+
+#: modules/upload/upload.module:67
+msgid "Read full article to view attachments."
+msgstr "Citiţi întregul articol pentru a afişa ataşamentele."
+
+#: modules/upload/upload.module:212
+msgid "Attachments"
+msgstr "Ataşamente"
+
+#: modules/upload/upload.module:225
+msgid "File attachments"
+msgstr "Fişiere ataşate"
+
+#: modules/upload/upload.module:228
+msgid ""
+"Changes made to the attachments are not permanent until you save this post. "
+"The first \"listed\" file will be included in RSS feeds."
+msgstr ""
+"Nu sunt permise modificări făcute ataşamentelor până când nu salvaţi acest "
+"articol. Primul \"afişat\" va fi inclus în fluxul RSS."
+
+#: modules/upload/upload.module:246
+msgid ""
+"File attachments are disabled. The file directories have not been properly "
+"configured."
+msgstr ""
+"Ataşarea fişierelor este dezactivată. Directoarele pentru fişiere nu au fost "
+"configurate în mod corespunzător."
+
+#: modules/upload/upload.module:248
+msgid ""
+"Please visit the <a href=\"@admin-file-system\">file system configuration "
+"page</a>."
+msgstr ""
+"Vizitaţi <a href=\"@admin-file-system\">pagina configuraţie fişier sistem</"
+"a>."
+
+#: modules/upload/upload.module:251
+msgid "Please contact the site administrator."
+msgstr "Vă rugăm contactaţi administratorul sitului."
+
+#: modules/upload/upload.module:353
+msgid "Attachment"
+msgstr "Ataşament"
+
+#: modules/upload/upload.module:353;530
+msgid "Size"
+msgstr "Mărime"
+
+#: modules/upload/upload.module:502
+msgid "Attach new file"
+msgstr "Ataşează un nou fişier"
+
+#: modules/upload/upload.module:504
+msgid "Images are larger than %resolution will be resized. "
+msgstr ""
+
+#: modules/upload/upload.module:504
+msgid ""
+"The maximum upload size is %filesize. Only files with the following "
+"extensions may be uploaded: %extensions. "
+msgstr ""
+
+#: modules/upload/upload.module:508
+msgid "Attach"
+msgstr "Ataşează"
+
+#: modules/upload/upload.module:513
+msgid "Please wait..."
+msgstr ""
+
+#: modules/upload/upload.module:65;318
+msgid "1 attachment"
+msgid_plural "@count attachments"
+msgstr[0] "1 fişier ataşat"
+msgstr[1] "@count fişiere ataşate"
+
+#: modules/upload/upload.module:46
+msgid "upload files"
+msgstr "încarcă fişiere"
+
+#: modules/upload/upload.module:46
+msgid "view uploaded files"
+msgstr "afişează fişierele încărcate"
+
+#: modules/upload/upload.module:86
+msgid "File uploads"
+msgstr "Încărcare fişiere"
+
+#: modules/upload/upload.module:87
+msgid "Control how files may be attached to content."
+msgstr "Controlează cum fişierele pot fi ataşate la conţinut."
+
+#: modules/upload/upload.module:0
+msgid "upload"
+msgstr "încarcă"
+
+#: modules/upload/upload.install:29
+msgid "Stores uploaded file information and table associations."
+msgstr ""
+
+#: modules/upload/upload.install:36
+msgid "Primary Key: The {files}.fid."
+msgstr ""
+
+#: modules/upload/upload.install:43
+msgid "The {node}.nid associated with the uploaded file."
+msgstr ""
+
+#: modules/upload/upload.install:50
+msgid "Primary Key: The {node}.vid associated with the uploaded file."
+msgstr ""
+
+#: modules/upload/upload.install:65
+msgid "Whether the file should be visibly listed on the node: yes(1) or no(0)."
+msgstr ""
+
+#: modules/upload/upload.install:72
+msgid "Weight of this upload in relation to other uploads in this node."
+msgstr ""

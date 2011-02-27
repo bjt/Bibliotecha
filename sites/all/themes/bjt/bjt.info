@@ -1,0 +1,7 @@
+; $Id$
+name = Bibliotecha
+description = Fast and nice
+core = 6.x
+engine = phptemplate
+stylesheets[all][] = css/style.css
+scripts[] = js/init.js

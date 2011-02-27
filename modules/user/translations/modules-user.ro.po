@@ -1,0 +1,1711 @@
+# Romanian translation of Drupal interface
+# License - GPL.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 6.x\n"
+"POT-Creation-Date: 2008-02-15 13:50+0100\n"
+"PO-Revision-Date: 2008-02-21 16:47+0200\n"
+"Last-Translator: Claudiu Cristea <clau.cristea@gmail.com>\n"
+"Language-Team: Romanian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.10.1\n"
+"X-Poedit-Language: Romanian\n"
+"X-Poedit-Country: ROMANIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: modules/user/user.admin.inc:13 modules/user/user.module:667;2425;908
+msgid "Create new account"
+msgstr "Creează un cont nou"
+
+#: modules/user/user.admin.inc:43
+msgid "Show only users where"
+msgstr "Afişează numai utilizatori care"
+
+#: modules/user/user.admin.inc:52
+msgid ""
+"<em>and</em> where <strong>%property</strong> is <strong>%value</strong>"
+msgstr ""
+
+#: modules/user/user.admin.inc:55
+msgid "<strong>%property</strong> is <strong>%value</strong>"
+msgstr ""
+
+#: modules/user/user.admin.inc:137;911 modules/user/user.module:621
+msgid "Member for"
+msgstr "Membru înregistrat de"
+
+#: modules/user/user.admin.inc:138;912
+msgid "Last access"
+msgstr "Ultima accesare"
+
+#: modules/user/user.admin.inc:169 modules/user/user.module:1957
+msgid "blocked"
+msgstr "blocat"
+
+#: modules/user/user.admin.inc:169 modules/user/user.module:1957
+msgid "active"
+msgstr "activ"
+
+#: modules/user/user.admin.inc:221
+msgid "No users selected."
+msgstr "Nu sunt utilizatori selectaţi."
+
+#: modules/user/user.admin.inc:233
+msgid "User registration settings"
+msgstr "Opţiunile de înregistrare ale utilizatorilor"
+
+#: modules/user/user.admin.inc:234
+msgid "Public registrations"
+msgstr "Înregistrări publice"
+
+#: modules/user/user.admin.inc:234
+msgid "Visitors can create accounts and no administrator approval is required."
+msgstr "Vizitatorii se pot înregistra fără aprobarea administratorului."
+
+#: modules/user/user.admin.inc:234
+msgid "Visitors can create accounts but administrator approval is required."
+msgstr ""
+"Vizitatorii se pot înregistra, dar este necesară aprobarea administratorului."
+
+#: modules/user/user.admin.inc:235
+msgid "Require e-mail verification when a visitor creates an account"
+msgstr ""
+"Necesită verificarea email-ului atunci când un utilizator crează un cont"
+
+#: modules/user/user.admin.inc:235
+msgid ""
+"If this box is checked, new users will be required to validate their e-mail "
+"address prior to logging into the site, and will be assigned a system-"
+"generated password. With it unchecked, users will be logged in immediately "
+"upon registering, and may select their own passwords during registration."
+msgstr ""
+"Dacă acest checkbox este bifat, noii utilizatori vor trebui să-şi valideze "
+"adresele de e-mail înainte de a se autentifica pe sit şi li se va atribui o "
+"parola generată automat de sistem. Dacă nu este bifat utilizatorii vor fi "
+"imediat autentificaţi după înregistrare şi pot să-şi selecteze propria "
+"parolă în timpul înregistrării."
+
+#: modules/user/user.admin.inc:236
+msgid "User registration guidelines"
+msgstr "Indicaţii de înregistrare"
+
+#: modules/user/user.admin.inc:236
+msgid ""
+"This text is displayed at the top of the user registration form and is "
+"useful for helping or instructing your users."
+msgstr ""
+"Textul este afişat la începutul formularului de înregistrare al noilor "
+"utilizatori şi este util pentru ajutorul sau instruirea utilizatorilor "
+"sitului dumneavoastră."
+
+#: modules/user/user.admin.inc:241
+msgid "User e-mail settings"
+msgstr "Opţiunile de e-mail ale utilizatorilor"
+
+#: modules/user/user.admin.inc:242
+msgid ""
+"Drupal sends emails whenever new users register on your site, and "
+"optionally, may also notify users after other account actions. Using a "
+"simple set of content templates, notification e-mails can be customized to "
+"fit the specific needs of your site."
+msgstr ""
+
+#: modules/user/user.admin.inc:246
+msgid "Available variables are:"
+msgstr "Variabilele disponibile sunt:"
+
+#: modules/user/user.admin.inc:250
+msgid "Welcome, new user created by administrator"
+msgstr "Bun venit, utilizator nou creat de administrator"
+
+#: modules/user/user.admin.inc:253
+msgid ""
+"Customize welcome e-mail messages sent to new member accounts created by an "
+"administrator."
+msgstr ""
+"Personalizaţi mesajul de întâmpinare, trimis tuturor noilor membri creaţi "
+"manual de către administrator."
+
+#: modules/user/user.admin.inc:270
+msgid "Welcome, no approval required"
+msgstr ""
+
+#: modules/user/user.admin.inc:273
+msgid ""
+"Customize welcome e-mail messages sent to new members upon registering, when "
+"no administrator approval is required."
+msgstr ""
+"Personalizaţi mesajul de întâmpinare, trimis noilor membri atunci când nu "
+"este necesară aprobarea administratorului."
+
+#: modules/user/user.admin.inc:290
+msgid "Welcome, awaiting administrator approval"
+msgstr "Bun venit, pentru cei ce aşteaptă aprobarea administratorului"
+
+#: modules/user/user.admin.inc:293
+msgid ""
+"Customize welcome e-mail messages sent to new members upon registering, when "
+"administrative approval is required."
+msgstr ""
+"Personalizează mesajul de întâmpinare care este trimis membrilor noi atunci "
+"când este necesară aprobarea administratorului."
+
+#: modules/user/user.admin.inc:310
+msgid "Password recovery email"
+msgstr "E-mail pentru recuperare a parolei"
+
+#: modules/user/user.admin.inc:313
+msgid "Customize e-mail messages sent to users who request a new password."
+msgstr ""
+
+#: modules/user/user.admin.inc:330
+msgid "Account activation email"
+msgstr "E-mail activare cont"
+
+#: modules/user/user.admin.inc:333
+msgid ""
+"Enable and customize e-mail messages sent to users upon account activation "
+"(when an administrator activates an account of a user who has already "
+"registered, on a site where administrative approval is required)."
+msgstr ""
+
+#: modules/user/user.admin.inc:337
+msgid "Notify user when account is activated."
+msgstr "Înştiinţează utilizatorul că a fost activat contul său."
+
+#: modules/user/user.admin.inc:355
+msgid "Account blocked email"
+msgstr "E-mail trimis la blocarea contului"
+
+#: modules/user/user.admin.inc:358
+msgid ""
+"Enable and customize e-mail messages sent to users when their accounts are "
+"blocked."
+msgstr ""
+
+#: modules/user/user.admin.inc:362
+msgid "Notify user when account is blocked."
+msgstr "Înştiinţează utilizatorul când contul este blocat."
+
+#: modules/user/user.admin.inc:380
+msgid "Account deleted email"
+msgstr ""
+
+#: modules/user/user.admin.inc:383
+msgid ""
+"Enable and customize e-mail messages sent to users when their accounts are "
+"deleted."
+msgstr ""
+
+#: modules/user/user.admin.inc:387
+msgid "Notify user when account is deleted."
+msgstr "Înştiinţează utilizatorul când contul este şters."
+
+#: modules/user/user.admin.inc:406
+msgid "Signatures"
+msgstr "Semnături"
+
+#: modules/user/user.admin.inc:410
+msgid "Signature support"
+msgstr "Suport semnătură"
+
+#: modules/user/user.admin.inc:423
+msgid "Pictures"
+msgstr "Imagini"
+
+#: modules/user/user.admin.inc:428
+msgid "Picture support"
+msgstr "Suport pentru imagini"
+
+#: modules/user/user.admin.inc:448
+msgid "Picture image path"
+msgstr "Calea către imagini"
+
+#: modules/user/user.admin.inc:452
+msgid "Subdirectory in the directory %dir where pictures will be stored."
+msgstr "Subdirector în directorul %dir, unde vor fi stocate imaginile."
+
+#: modules/user/user.admin.inc:456
+msgid "Default picture"
+msgstr "Imaginea predefinită"
+
+#: modules/user/user.admin.inc:460
+msgid ""
+"URL of picture to display for users with no custom picture selected. Leave "
+"blank for none."
+msgstr ""
+"Adresa URL pentru poza care va fi afişată în profilul membrilor care nu şi-"
+"au personalizat contul. Lăsaţi liber pentru nici un fel de poză."
+
+#: modules/user/user.admin.inc:464
+msgid "Picture maximum dimensions"
+msgstr "Dimensiunile maxime ale pozei"
+
+#: modules/user/user.admin.inc:468
+msgid "Maximum dimensions for pictures, in pixels."
+msgstr "Dimensiunile maxime pentru poze, în pixeli."
+
+#: modules/user/user.admin.inc:472
+msgid "Picture maximum file size"
+msgstr "Mărimea maximă a fişierului care conţine poza"
+
+#: modules/user/user.admin.inc:476
+msgid "Maximum file size for pictures, in kB."
+msgstr "Mărimea maximă a fişierului, în kB."
+
+#: modules/user/user.admin.inc:480
+msgid "Picture guidelines"
+msgstr "Instrucţiuni imagine"
+
+#: modules/user/user.admin.inc:482
+msgid ""
+"This text is displayed at the picture upload form in addition to the default "
+"guidelines. It's useful for helping or instructing your users."
+msgstr ""
+"Textul este afişat în formularul de încărcare a imaginilor în adiţie la "
+"instrucţiunile generale. Este util pentru ajutorul sau instruirea "
+"utilizatorilor sitului dumneavoastră."
+
+#: modules/user/user.admin.inc:543
+msgid "Save permissions"
+msgstr "Salvează permisiunile"
+
+#: modules/user/user.admin.inc:563 modules/user/user.pages.inc:280;346
+msgid "The changes have been saved."
+msgstr "Modificările au fost salvate."
+
+#: modules/user/user.admin.inc:582 modules/user/user.module:1941
+msgid "@module module"
+msgstr "modulul @module"
+
+#: modules/user/user.admin.inc:595
+msgid "Permission"
+msgstr "Permisiune"
+
+#: modules/user/user.admin.inc:624
+msgid "Role name"
+msgstr "Numele rolului"
+
+#: modules/user/user.admin.inc:629
+msgid ""
+"The name for this role. Example: \"moderator\", \"editorial board\", \"site "
+"architect\"."
+msgstr ""
+"Numele pentru acest rol. De exemplu: \"moderator\", \"editor\", \"webmaster"
+"\"."
+
+#: modules/user/user.admin.inc:637;662;679
+msgid "Save role"
+msgstr "Salvează rolul"
+
+#: modules/user/user.admin.inc:641;683
+msgid "Delete role"
+msgstr "Şterge rolul"
+
+#: modules/user/user.admin.inc:652;667;691
+msgid "Add role"
+msgstr "Adaugă un rol"
+
+#: modules/user/user.admin.inc:664;669
+msgid "The role name %name already exists. Please choose another role name."
+msgstr "Rolul cu numele %name există deja. Vă rugăm algeţi alt nume de rol."
+
+#: modules/user/user.admin.inc:674
+msgid "You must specify a valid role name."
+msgstr "Trebuie să specificaţi un nume valid pentru rol."
+
+#: modules/user/user.admin.inc:681
+msgid "The role has been renamed."
+msgstr "Rolul a fost redenumit."
+
+#: modules/user/user.admin.inc:689
+msgid "The role has been deleted."
+msgstr "Rolul a fost şters."
+
+#: modules/user/user.admin.inc:693
+msgid "The role has been added."
+msgstr "Rolul a fost adăugat."
+
+#: modules/user/user.admin.inc:715;737
+msgid "You must enter a mask."
+msgstr "Trebuie să introduceţi o mască."
+
+#: modules/user/user.admin.inc:720
+msgid "The access rule has been added."
+msgstr "Regula de acces a fost adăugată."
+
+#: modules/user/user.admin.inc:728 modules/user/user.module:1007
+msgid "Add rule"
+msgstr "Adaugă o regulă"
+
+#: modules/user/user.admin.inc:741
+msgid "The access rule has been saved."
+msgstr "Regula de acces a fost salvată."
+
+#: modules/user/user.admin.inc:748
+msgid "Save rule"
+msgstr "Salvează regula"
+
+#: modules/user/user.admin.inc:759;886
+msgid "Access type"
+msgstr "Tip acces"
+
+#: modules/user/user.admin.inc:761
+msgid "Allow"
+msgstr "Permite"
+
+#: modules/user/user.admin.inc:761
+msgid "Deny"
+msgstr "Interzice"
+
+#: modules/user/user.admin.inc:763
+msgid "Host"
+msgstr "Gazdă"
+
+#: modules/user/user.admin.inc:766;886
+msgid "Rule type"
+msgstr "Tip regulă"
+
+#: modules/user/user.admin.inc:772;886
+msgid "Mask"
+msgstr "Mască"
+
+#: modules/user/user.admin.inc:776
+msgid "Matches any number of characters, even zero characters"
+msgstr "Găseşte orice număr de caracter, inclusiv zerouri."
+
+#: modules/user/user.admin.inc:776
+msgid "Matches exactly one character."
+msgstr "Găseşte exact un caracter."
+
+#: modules/user/user.admin.inc:786
+msgid "No value entered. Please enter a test string and try again."
+msgstr ""
+"Nu aţi introdus nimic. Vă rugăm să tastaţi un text de probă şi să încercaţi "
+"din nou."
+
+#: modules/user/user.admin.inc:792
+msgid "Enter a username to check if it will be denied or allowed."
+msgstr ""
+"Introdu un nume de utilizator pentru a verifica dacă este permis sau nu."
+
+#: modules/user/user.admin.inc:794
+msgid "Check username"
+msgstr "Verifică nume utilizator"
+
+#: modules/user/user.admin.inc:803
+msgid "Enter an e-mail address to check if it will be denied or allowed."
+msgstr "Introdu o adresă de e-mail pentru a verifica dacă este permisă sau nu."
+
+#: modules/user/user.admin.inc:805
+msgid "Check e-mail"
+msgstr "Verifică e-mail"
+
+#: modules/user/user.admin.inc:814
+msgid ""
+"Enter a hostname or IP address to check if it will be denied or allowed."
+msgstr ""
+"Introdu un nume de gazdă sau o adresă IP pentru a verifica dacă este permis"
+"(ă) sau nu."
+
+#: modules/user/user.admin.inc:816
+msgid "Check hostname"
+msgstr "Verifică nume gazdă"
+
+#: modules/user/user.admin.inc:827
+msgid "The username %name is not allowed."
+msgstr "Numele %name nu este permis."
+
+#: modules/user/user.admin.inc:830
+msgid "The username %name is allowed."
+msgstr "Numele %name este permis."
+
+#: modules/user/user.admin.inc:835
+msgid "The e-mail address %mail is not allowed."
+msgstr "Adresa de e-mail %mail nu este permisă."
+
+#: modules/user/user.admin.inc:838
+msgid "The e-mail address %mail is allowed."
+msgstr "Adresa de e-mail %mail este permisă."
+
+#: modules/user/user.admin.inc:843
+msgid "The hostname %host is not allowed."
+msgstr "Serverul gazdă %host nu este permis."
+
+#: modules/user/user.admin.inc:846
+msgid "The hostname %host is allowed."
+msgstr "Serverul gazdă %host este permis."
+
+#: modules/user/user.admin.inc:861;888
+msgid "username"
+msgstr "utilizator"
+
+#: modules/user/user.admin.inc:861;888
+msgid "e-mail"
+msgstr "e-mail"
+
+#: modules/user/user.admin.inc:861;888
+msgid "host"
+msgstr "gazdă"
+
+#: modules/user/user.admin.inc:867
+msgid "Are you sure you want to delete the @type rule for %rule?"
+msgstr "Sunteţi sigur că doriţi să ştergeţi regula @type pentru %rule?"
+
+#: modules/user/user.admin.inc:877
+msgid "The access rule has been deleted."
+msgstr "Regula de acces a fost ştearsă."
+
+#: modules/user/user.admin.inc:891
+msgid "allow"
+msgstr "permite"
+
+#: modules/user/user.admin.inc:891
+msgid "deny"
+msgstr "blochează"
+
+#: modules/user/user.admin.inc:894
+msgid "There are currently no access rules."
+msgstr "În prezent nu sunt reguli de acces."
+
+#: modules/user/user.admin.inc:931
+msgid "No users available."
+msgstr "Nu sunt utilizatori disponibili."
+
+#: modules/user/user.admin.inc:952
+msgid "edit permissions"
+msgstr "modificare permisiuni"
+
+#: modules/user/user.admin.inc:954
+msgid "edit role"
+msgstr "modifică rolul"
+
+#: modules/user/user.admin.inc:957
+msgid "locked"
+msgstr "blocat"
+
+#: modules/user/user.pages.inc:34
+msgid "Username or e-mail address"
+msgstr "Nume utilizator sau adresa e-mail"
+
+#: modules/user/user.pages.inc:39
+msgid "E-mail new password"
+msgstr "Trimite noua parolă prin e-mail"
+
+#: modules/user/user.pages.inc:56
+msgid "Sorry, %name is not recognized as a user name or an e-mail address."
+msgstr ""
+"Ne pare rău, %name nu este recunoscut ca un nume de utilizator sau o adresă "
+"email."
+
+#: modules/user/user.pages.inc:67
+msgid "Further instructions have been sent to your e-mail address."
+msgstr ""
+"Alte iinstrucţiuni suplimentare au fost trimise la adresa dumneavoastră de e-"
+"mail."
+
+#: modules/user/user.pages.inc:81
+msgid ""
+"You have already used this one-time login link. It is not necessary to use "
+"this link to login anymore. You are already logged in."
+msgstr ""
+"Aţi utilizat deja linkul pentru autentificare one-time. Nu mai este necesară "
+"utilizarea acestui link pentru autentificare. Sunteţi autentificat deja."
+
+#: modules/user/user.pages.inc:92
+msgid ""
+"You have tried to use a one-time login link that has expired. Please request "
+"a new one using the form below."
+msgstr ""
+"Aţi încercat utilizarea unui link one-time care a expirat. Vă rugăm "
+"solicitaţi unul nou utilizând formularul de mai jos."
+
+#: modules/user/user.pages.inc:104
+msgid ""
+"You have just used your one-time login link. It is no longer necessary to "
+"use this link to login. Please change your password."
+msgstr ""
+"Tocmai aţi utilizat linkul one-time login. Nu mai este necesar să utilizaţi "
+"acest link pentru autentificare. Vă rugăm schimbaţi parola."
+
+#: modules/user/user.pages.inc:108
+msgid ""
+"<p>This is a one-time login for %user_name and will expire on %"
+"expiration_date.</p><p>Click on this button to login to the site and change "
+"your password.</p>"
+msgstr ""
+"<p>Acesta este o autentificare one-time pentru %user_name şi va expira în %"
+"expiration_date</p><p>Apăsaţi acest buton pentru a vă autentifica la sit şi "
+"a vă schimba parola.</p>"
+
+#: modules/user/user.pages.inc:109
+msgid "This login can be used only once."
+msgstr "Această autentificare poate fi folosită o singură dată."
+
+#: modules/user/user.pages.inc:110 modules/user/user.module:663;1255;902
+msgid "Log in"
+msgstr "Autentificare"
+
+#: modules/user/user.pages.inc:116
+msgid ""
+"You have tried to use a one-time login link which has either been used or is "
+"no longer valid. Please request a new one using the form below."
+msgstr ""
+"Aţi încercat să utilizaţi un link pentru autentificare one-time care a fost "
+"ori utilizat ori nu mai este valid. Solicitaţi unul nou utilizând formularul "
+"de mai jos."
+
+#: modules/user/user.pages.inc:263;332;261;330
+#: modules/user/user.module:1768;2277
+msgid "Detected malicious attempt to alter protected user fields."
+msgstr ""
+"Am detectat tentative maliţioase de modificare a câmpurilor protejate de "
+"utilizator."
+
+#: modules/user/user.pages.inc:308
+msgid "Are you sure you want to delete the account %name?"
+msgstr "Sigur doriţi să ştergeţi contul %name?"
+
+#: modules/user/user.pages.inc:310
+msgid ""
+"All submissions made by this user will be attributed to the anonymous "
+"account. This action cannot be undone."
+msgstr ""
+"Tot conţinutul creat de acest utilizator va fi creditat contului Anonim. "
+"Această acţiune nu are cale de întoarcere."
+
+#: modules/user/user.pages.inc:319
+msgid "%name has been deleted."
+msgstr "%name a fost şters."
+
+#: modules/user/user.pages.inc:66
+msgid "Password reset instructions mailed to %name at %email."
+msgstr ""
+"Instrucţiunile de schimbare a parolei au fost trimise spre %name la adresa %"
+"email."
+
+#: modules/user/user.pages.inc:98
+msgid "User %name used one-time login link at time %timestamp."
+msgstr ""
+"Utilizatorul %name a folosit linkul unic de autentificare la momentul %"
+"timestamp."
+
+#: modules/user/user.pages.inc:134
+msgid "Session closed for %name."
+msgstr "A fost închisă sesiunea pentru %name."
+
+#: modules/user/user.module:379
+msgid "You must enter a username."
+msgstr "Trebuie să introduceţi un nume de utilizator."
+
+#: modules/user/user.module:380
+msgid "The username cannot begin with a space."
+msgstr "Numele de utilizator nu poate începe cu un spaţiu."
+
+#: modules/user/user.module:381
+msgid "The username cannot end with a space."
+msgstr "Numele de utilizator nu se poate termina cu un spaţiu."
+
+#: modules/user/user.module:382
+msgid "The username cannot contain multiple spaces in a row."
+msgstr "Numele de utilizator nu poate conţine mai multe spaţii consecutive."
+
+#: modules/user/user.module:383;394
+msgid "The username contains an illegal character."
+msgstr "Numele de utilizator conţine un caracter ilegal."
+
+#: modules/user/user.module:396
+msgid "The username is not a valid authentication ID."
+msgstr "Numele de utilizator nu este un ID de autentificare valid."
+
+#: modules/user/user.module:397
+msgid "The username %name is too long: it must be %max characters or less."
+msgstr ""
+"Numele de utilizator %name este prea lung: trebuie să aibă %max caractere "
+"sau mai puţin."
+
+#: modules/user/user.module:401
+msgid "You must enter an e-mail address."
+msgstr "Trebuie să introduceţi o adresă de e-mail."
+
+#: modules/user/user.module:403
+msgid "The e-mail address %mail is not valid."
+msgstr "Adresa de e-mail %mail nu este validă."
+
+#: modules/user/user.module:429
+msgid ""
+"Failed to upload the picture image; the %directory directory doesn't exist "
+"or is not writable."
+msgstr ""
+"Nu am reuşit să încarc imaginea; directorul %directory nu există sau nu "
+"poate fi scris."
+
+#: modules/user/user.module:617
+msgid "History"
+msgstr "Istoric"
+
+#: modules/user/user.module:639
+msgid "Account settings"
+msgstr "Opţiuni cont"
+
+#: modules/user/user.module:667
+msgid "Create a new user account."
+msgstr "Creează un cont nou de utilizator."
+
+#: modules/user/user.module:669;917
+msgid "Request new password"
+msgstr "Solicitaţi o parolă nouă"
+
+#: modules/user/user.module:669
+msgid "Request new password via e-mail."
+msgstr "Solicitaţi o parolă nouă prin e-mail."
+
+#: modules/user/user.module:681;728
+msgid "User login"
+msgstr "Autentificare utilizatori"
+
+#: modules/user/user.module:690;749
+msgid "Who's new"
+msgstr "Cine e nou"
+
+#: modules/user/user.module:693;788
+msgid "Who's online"
+msgstr "Cine e online"
+
+#: modules/user/user.module:700
+msgid "Number of users to display"
+msgstr "Numărul de utilizatori afişaţi"
+
+#: modules/user/user.module:708
+msgid "User activity"
+msgstr "Activitatea utilizatorului"
+
+#: modules/user/user.module:708
+msgid ""
+"A user is considered online for this long after they have last viewed a page."
+msgstr ""
+"Un utilizator este considerat online pe această durată de timp după ultima "
+"accesare a unei pagini din sit."
+
+#: modules/user/user.module:709
+msgid "User list length"
+msgstr "Lungimea listei de utilizatori"
+
+#: modules/user/user.module:709
+msgid "Maximum number of currently online users to display."
+msgstr "Lungimea maximă a listei de utilizatori aflaţi simultan pe sit."
+
+#: modules/user/user.module:776
+msgid "There is currently %members and %visitors online."
+msgstr "În acest moment este %members şi %visitors online."
+
+#: modules/user/user.module:779
+msgid "There are currently %members and %visitors online."
+msgstr "În acest moment sunt %members şi %visitors online."
+
+#: modules/user/user.module:785
+msgid "Online users"
+msgstr "Utilizatori prezenţi"
+
+#: modules/user/user.module:816
+msgid "@user's picture"
+msgstr "imaginea utilizatorului @user"
+
+#: modules/user/user.module:1171;1041
+msgid "My account"
+msgstr "Contul meu"
+
+#: modules/user/user.module:1247
+msgid "Enter your @s username."
+msgstr "Introduceţi numele utilizator @s."
+
+#: modules/user/user.module:1250
+msgid "Enter the password that accompanies your username."
+msgstr "Introduceţi parola corespunzătoare numelui de utilizator."
+
+#: modules/user/user.module:1289
+msgid "The username %name has not been activated or is blocked."
+msgstr "Utilizatorul %namen nu a fost activat, sau are accesul interzis."
+
+#: modules/user/user.module:1293
+msgid "The name %name is a reserved username."
+msgstr "Numele %name este rezervat."
+
+#: modules/user/user.module:1313
+msgid ""
+"Sorry, unrecognized username or password. <a href=\"@password\">Have you "
+"forgotten your password?</a>"
+msgstr ""
+"Ne pare rău, nume utilizator şi parolă nerecunoscute. <a href=\"@password"
+"\">Vi-aţi uitat parola?</a>"
+
+#: modules/user/user.module:1419
+msgid "Account information"
+msgstr "Informaţii de cont"
+
+#: modules/user/user.module:1427
+msgid ""
+"Spaces are allowed; punctuation is not allowed except for periods, hyphens, "
+"and underscores."
+msgstr ""
+"Spaţiile sunt permise; punctuaţia nu este permisă cu excepţia punctului, "
+"liniuţei şi linie jos (underscore)."
+
+#: modules/user/user.module:1435
+msgid ""
+"A valid e-mail address. All e-mails from the system will be sent to this "
+"address. The e-mail address is not made public and will only be used if you "
+"wish to receive a new password or wish to receive certain news or "
+"notifications by e-mail."
+msgstr ""
+"Introduceţi o adresă validă de e-mail. Toate mesajele noastre vor fi trimise "
+"la această adresă. Adresa de e-mail nu va fi făcută publică şi va fi "
+"folosită numai în cazurile în care doriţi schimbarea parolei sau vă abonaţi "
+"voluntar la diverse notificări."
+
+#: modules/user/user.module:1440
+msgid ""
+"To change the current user password, enter the new password in both fields."
+msgstr ""
+"Pentru a schimba parola curentă, introduceţi parola nouă în ambele câmpuri."
+
+#: modules/user/user.module:1447
+msgid "Provide a password for the new account in both fields."
+msgstr "Introduceţi o parolă pentru noul cont."
+
+#: modules/user/user.module:1457
+msgid "Blocked"
+msgstr "Blocat"
+
+#: modules/user/user.module:1492
+msgid "Signature settings"
+msgstr "Configurare semnătură"
+
+#: modules/user/user.module:1497
+msgid "Signature"
+msgstr "Semnătura"
+
+#: modules/user/user.module:1499
+msgid "Your signature will be publicly displayed at the end of your comments."
+msgstr "Semnătura ta va fi făcută publică la finalul tuturor comentariilor."
+
+#: modules/user/user.module:1505
+msgid "Picture"
+msgstr "Imagine"
+
+#: modules/user/user.module:1509
+msgid "Delete picture"
+msgstr "Şterge imaginea"
+
+#: modules/user/user.module:1509
+msgid "Check this box to delete your current picture."
+msgstr "Bifează această căsuţă pentru a-ţi şterge imaginea curentă."
+
+#: modules/user/user.module:1514
+msgid "Upload picture"
+msgstr "Încarcă imaginea"
+
+#: modules/user/user.module:1514
+msgid ""
+"Your virtual face or picture. Maximum dimensions are %dimensions and the "
+"maximum size is %size kB."
+msgstr ""
+"Poza sau caricatura dumneavoastră. Dimensiunile maxime sunt %dimensions iar "
+"mărimea maxim admisă a fişierului este %size kB."
+
+#: modules/user/user.module:1530
+msgid "The name %name is already taken."
+msgstr "Numele %name este folosit deja."
+
+#: modules/user/user.module:1533
+msgid "The name %name has been denied access."
+msgstr "Numele %name are accesul interzis."
+
+#: modules/user/user.module:1542
+msgid ""
+"The e-mail address %email is already registered. <a href=\"@password\">Have "
+"you forgotten your password?</a>"
+msgstr ""
+"Adresa de email %email este deja înregistrată. <a href=\"@password\">Aţi "
+"uitat parola?</a>"
+
+#: modules/user/user.module:1545
+msgid "The e-mail address %email has been denied access."
+msgstr "Adresa de e-mail %email are accesul interzis."
+
+#: modules/user/user.module:1625
+msgid "Account details for !username at !site"
+msgstr "Detaliile contului !username la !site"
+
+#: modules/user/user.module:1627
+msgid ""
+"!username,\n"
+"\n"
+"Thank you for registering at !site. You may now log in to !login_uri using "
+"the following username and password:\n"
+"\n"
+"username: !username\n"
+"password: !password\n"
+"\n"
+"You may also log in by clicking on this link or copying and pasting it in "
+"your browser:\n"
+"\n"
+"!login_url\n"
+"\n"
+"This is a one-time login, so it can be used only once.\n"
+"\n"
+"After logging in, you will be redirected to !edit_uri so you can change your "
+"password.\n"
+"\n"
+"\n"
+"--  !site team"
+msgstr ""
+"!username,\n"
+"\n"
+"Vă mulţumim că v-aţi înregistrat la !site. Puteţi să vă identificaţi acum "
+"la !login_uri folosind următorul cont si următoarea parolă:\n"
+"\n"
+"nume cont: !username\n"
+"parolă: !password\n"
+"\n"
+"De asemenea, puteţi să vă identificaţi făcând click pe linkul de mai jos, "
+"sau copiind adresa in browserul dumneavostră:\n"
+"\n"
+"!login_url\n"
+"\n"
+"Acest link poate fi folosit o singură dată, întrucât expiră după folosire.\n"
+"\n"
+"După ce v-aţi identificat veţi fi redirecţionat la !edit_uri pentru a vă "
+"putea schimba parola.\n"
+"\n"
+"\n"
+"--\n"
+"Echipa !site"
+
+#: modules/user/user.module:1629
+msgid "An administrator created an account for you at !site"
+msgstr "Un administrator a creat un cont pentru dumneavoastră la !site"
+
+#: modules/user/user.module:1631
+msgid ""
+"!username,\n"
+"\n"
+"A site administrator at !site has created an account for you. You may now "
+"log in to !login_uri using the following username and password:\n"
+"\n"
+"username: !username\n"
+"password: !password\n"
+"\n"
+"You may also log in by clicking on this link or copying and pasting it in "
+"your browser:\n"
+"\n"
+"!login_url\n"
+"\n"
+"This is a one-time login, so it can be used only once.\n"
+"\n"
+"After logging in, you will be redirected to !edit_uri so you can change your "
+"password.\n"
+"\n"
+"\n"
+"--  !site team"
+msgstr ""
+"!username,\n"
+"\n"
+"Un administrator de la !site a creat un cont pentru dumneavoastră. Puteţi să "
+"vă identificaţi acum la !login_uri folosind următorul cont si următoarea "
+"parolă:\n"
+"\n"
+"nume cont: !username\n"
+"parolă: !password\n"
+"\n"
+"De asemenea, puteţi să vă identificaţi făcând clic pe linkul de mai jos, sau "
+"copiind adresa in browserul dumneavoastră:\n"
+"\n"
+"!login_url\n"
+"\n"
+"Acest link poate fi folosit o singură dată, întrucât expiră după folosire.\n"
+"\n"
+"După ce v-aţi autentificat veţi fi redirecţionat către !edit_uri pentru a vă "
+"schimba parola.\n"
+"\n"
+"\n"
+"-- Echipa !site"
+
+#: modules/user/user.module:1634
+msgid "Account details for !username at !site (pending admin approval)"
+msgstr ""
+"Detalii cont pentru !username la !site (în aşteptarea aprobării "
+"administratorului)"
+
+#: modules/user/user.module:1636
+msgid ""
+"!username,\n"
+"\n"
+"Thank you for registering at !site. Your application for an account is "
+"currently pending approval. Once it has been approved, you will receive "
+"another e-mail containing information about how to log in, set your "
+"password, and other details.\n"
+"\n"
+"\n"
+"--  !site team"
+msgstr ""
+"!username,\n"
+"\n"
+"Vă mulţumim că v-aţi înregistrat la !site. Cererea dumneavoastră pentru un "
+"cont aşteaptă deocamdată aprobarea. Odată ce va fi aprobată, veţi primi un "
+"alt e-mail care va conţine informaţii despre cum să vă autentificaţi, cum să "
+"vă introduceţi parola şi alte detalii.\n"
+"\n"
+"\n"
+"-- Echipa !site"
+
+#: modules/user/user.module:1638
+msgid ""
+"!username has applied for an account.\n"
+"\n"
+"!edit_uri"
+msgstr ""
+"!username s-a înscris pentru un cont.\n"
+"\n"
+"!edit_uri"
+
+#: modules/user/user.module:1640
+msgid "Replacement login information for !username at !site"
+msgstr "Înlocuire informaţii autentificare pentru !username la !site"
+
+#: modules/user/user.module:1642
+msgid ""
+"!username,\n"
+"\n"
+"A request to reset the password for your account has been made at !site.\n"
+"\n"
+"You may now log in to !uri_brief by clicking on this link or copying and "
+"pasting it in your browser:\n"
+"\n"
+"!login_url\n"
+"\n"
+"This is a one-time login, so it can be used only once. It expires after one "
+"day and nothing will happen if it's not used.\n"
+"\n"
+"After logging in, you will be redirected to !edit_uri so you can change your "
+"password."
+msgstr ""
+"!username,\n"
+"\n"
+"Situl !site a primit o cerere de resetare a parolei corespunzătoare contului "
+"dumneavoastră.\n"
+"\n"
+"Puteţi să vă autentificaţi la !uri_brief fie apăsând pe linkul de mai jos, "
+"fie introducând adresa în browserul dumneavoastră:\n"
+"\n"
+"!login_url\n"
+"\n"
+"Acest link poate fi folosit o singură dată. Expiră după o zi, şi nu se "
+"întâmplă nimic dacă nu este folosit.\n"
+"\n"
+"După ce v-aţi autentificat veţi fi redirecţionat automat la !edit_uri pentru "
+"a vă schimba parola."
+
+#: modules/user/user.module:1644
+msgid "Account details for !username at !site (approved)"
+msgstr "Detaliile contului !username la !site (aprobat)"
+
+#: modules/user/user.module:1646
+msgid ""
+"!username,\n"
+"\n"
+"Your account at !site has been activated.\n"
+"\n"
+"You may now log in by clicking on this link or copying and pasting it in "
+"your browser:\n"
+"\n"
+"!login_url\n"
+"\n"
+"This is a one-time login, so it can be used only once.\n"
+"\n"
+"After logging in, you will be redirected to !edit_uri so you can change your "
+"password.\n"
+"\n"
+"Once you have set your own password, you will be able to log in to !"
+"login_uri in the future using:\n"
+"\n"
+"username: !username\n"
+msgstr ""
+"!username,\n"
+"\n"
+"Contul dumneavoastră la !site a fost activat.\n"
+"\n"
+"Puteţi să vă identificaţi acum făcând click pe link sau copiind acest link "
+"în browser:\n"
+"\n"
+"!login_url\n"
+"\n"
+"Acest link poate fi folosit o singură dată, întrucât expiră după folosire.\n"
+"\n"
+"După ce v-aţi identificat veţi fi redirecţionat la !edit_uri pentru a vă "
+"putea schimba parola.\n"
+"\n"
+"\n"
+"utilzator: !username\n"
+
+#: modules/user/user.module:1648
+msgid "Account details for !username at !site (blocked)"
+msgstr "Detaliile contului !username la !site (blocat)"
+
+#: modules/user/user.module:1650
+msgid ""
+"!username,\n"
+"\n"
+"Your account on !site has been blocked."
+msgstr ""
+
+#: modules/user/user.module:1652
+msgid "Account details for !username at !site (deleted)"
+msgstr "Detaliile contului !username la !site (şters)"
+
+#: modules/user/user.module:1654
+msgid ""
+"!username,\n"
+"\n"
+"Your account on !site has been deleted."
+msgstr ""
+"!username,\n"
+"\n"
+"Contul dumneavoastră pe !site a fost şters."
+
+#: modules/user/user.module:1714
+msgid "Unblock the selected users"
+msgstr "Deblochează utilizatorii selectaţi"
+
+#: modules/user/user.module:1718
+msgid "Block the selected users"
+msgstr "Blochează utilizatorii selectaţi"
+
+#: modules/user/user.module:1722
+msgid "Delete the selected users"
+msgstr "Şterge utilizatorii selectaţi"
+
+#: modules/user/user.module:1742
+msgid "Add a role to the selected users"
+msgstr "Adaugă un rol utilizatorilor selectaţi"
+
+#: modules/user/user.module:1745
+msgid "Remove a role from the selected users"
+msgstr "Şterge un rol utilizatorilor selectaţi"
+
+#: modules/user/user.module:1847
+msgid "Are you sure you want to delete these users?"
+msgstr "Sigur doriţi să ştergeţi aceşti utilizatori?"
+
+#: modules/user/user.module:1857
+msgid "The users have been deleted."
+msgstr "Utilizatorii au fost şterşi."
+
+#: modules/user/user.module:1871
+msgid ""
+"The user module allows users to register, login, and log out. Users benefit "
+"from being able to sign on because it associates content they create with "
+"their account and allows various permissions to be set for their roles. The "
+"user module supports user roles which establish fine grained permissions "
+"allowing each role to do only what the administrator wants them to. Each "
+"user is assigned to one or more roles. By default there are two roles "
+"<em>anonymous</em> - a user who has not logged in, and <em>authenticated</"
+"em> a user who has signed up and who has been authorized."
+msgstr ""
+"Modulul user permite utilizatorilor să se întregistreze, să se autentifice, "
+"să iasă. Beneficiul utilizatorilor constă în faptul că se asociază "
+"conţinutul creat de ei cu contul lor şi că se pot atribui diferite "
+"permisiuni pe baza rolurilor lor. Modulul user suportă roluri utilizator pe "
+"baza cărora se pot configura permisiuni permiţând fiecărui rol să facă ceea "
+"adminitratorul a prevăzut. Fiecare utilizator este atribuit unui sau mai "
+"multor roluri. Implicit există două roluri <em>anonim</em> - utilizatorul "
+"care nu este autentificat şi <em>autentificat</em> un utilizator care este "
+"autentificat."
+
+#: modules/user/user.module:1872
+msgid ""
+"Users can use their own name or handle and can specify personal "
+"configuration settings through their individual <em>My account</em> page. "
+"Users must authenticate by supplying a local username and password or "
+"through their OpenID, an optional and secure method for logging into many "
+"websites with a single username and password. In some configurations, users "
+"may authenticate using a username and password from another Drupal site, or "
+"through some other site-specific mechanism."
+msgstr ""
+"Utilizatorii pot folosi propriul nume sau alias şi pot regla fin anumite "
+"configuraţii personale prin intermediul paginii contului individual. "
+"Utilizatorii înregistraţi trebuie să se autentifice prin introducerea unui "
+"nume de utilizator şi parolă locale sau prin folosirea contului OpenID, o "
+"metodă opţională şi sigură pentru autentificarea pe mai multe situri cu un "
+"singur nume de utilizator şi o parolă. În anumite configuraţii utilizatorii "
+"mai pot să se autentifice folosind un nume de utilizator şi o parolă de la "
+"alt sit Drupal sau prin mecnisme specifice sitului."
+
+#: modules/user/user.module:1873
+msgid ""
+"A visitor accessing your website is assigned a unique ID, or session ID, "
+"which is stored in a cookie. The cookie does not contain personal "
+"information, but acts as a key to retrieve information from your site. Users "
+"should have cookies enabled in their web browser when using your site."
+msgstr ""
+
+#: modules/user/user.module:1874
+msgid ""
+"For more information, see the online handbook entry for <a href=\"@user"
+"\">User module</a>."
+msgstr ""
+"Pentru mai multe informaţii citeşte manualul de configurare şi setare <a "
+"href=\"@user\">Modulul user</a>."
+
+#: modules/user/user.module:1877
+msgid ""
+"Drupal allows users to register, login, log out, maintain user profiles, "
+"etc. Users of the site may not use their own names to post content until "
+"they have signed up for a user account."
+msgstr ""
+"Drupal permite utilizatorilor să se înregistreze, să se autentifice, să-şi "
+"actualizeze profilul personal, etc. Nici un vizitator nu-şi poate folosi "
+"numele pentru a publica articole până nu se înregistrează ca şl utilizator "
+"valid."
+
+#: modules/user/user.module:1880
+msgid ""
+"This web page allows administrators to register new users. Users' e-mail "
+"addresses and usernames must be unique."
+msgstr ""
+"Această pagină permite administratorilor să înregistreze manual noi "
+"utilizatori. Nu puteţi înregistra un utilizator cu acelaşi nume sau aceeaşi "
+"adresă de e-mail ca şi a unui utilizator deja înregistrat."
+
+#: modules/user/user.module:1882
+msgid ""
+"Set up username and e-mail address access rules for new <em>and</em> "
+"existing accounts (currently logged in accounts will not be logged out). If "
+"a username or e-mail address for an account matches any deny rule, but not "
+"an allow rule, then the account will not be allowed to be created or to log "
+"in. A host rule is effective for every page view, not just registrations."
+msgstr ""
+"Configurează reguli de acces pe baza numelui de utilizator şi a adresei de "
+"email pentru conturile noi <em>şi</em> existente (contrurile autentificare "
+"nu vor fi deconectate). Dacă un nume de utilizator sau o adresă de email "
+"pentru un cont se potriveşte cu una din regulile de interdicţie dar nu cu o "
+"regulă de permisie, atunci acest cont nu va putea fi creat sau nu se va "
+"putea autentifica. O regulă host este efectivă pentru toate paginile nu doar "
+"pentru înregistrare."
+
+#: modules/user/user.module:1884
+msgid ""
+"Permissions let you control what users can do on your site. Each user role "
+"(defined on the <a href=\"@role\">user roles page</a>) has its own set of "
+"permissions. For example, you could give users classified as \"Administrators"
+"\" permission to \"administer nodes\" but deny this power to ordinary, "
+"\"authenticated\" users. You can use permissions to reveal new features to "
+"privileged users (those with subscriptions, for example). Permissions also "
+"allow trusted users to share the administrative burden of running a busy "
+"site."
+msgstr ""
+"Permisiunile vă lasă să controlaţi ce pot utilizatorii să facă pe sit. "
+"Fiecare rol utilizator (definit la <a href=\"@role\">roluri utilizator</a>) "
+"are propriul set de permisiuni. De exemplu puteţi atribui utilizatorilor "
+"clasificaţi ca şi \"Administrators\" permisiuni de \"administrare noduri\" "
+"în timp ce interziceţi acesta utilizatorilor \"autentificaţi\"."
+
+#: modules/user/user.module:1886
+msgid ""
+"<p>Roles allow you to fine tune the security and administration of Drupal. A "
+"role defines a group of users that have certain privileges as defined in <a "
+"href=\"@permissions\">user permissions</a>. Examples of roles include: "
+"anonymous user, authenticated user, moderator, administrator and so on. In "
+"this area you will define the <em>role names</em> of the various roles. To "
+"delete a role choose \"edit\".</p><p>By default, Drupal comes with two user "
+"roles:</p>\n"
+"      <ul>\n"
+"      <li>Anonymous user: this role is used for users that don't have a user "
+"account or that are not authenticated.</li>\n"
+"      <li>Authenticated user: this role is automatically granted to all "
+"logged in users.</li>\n"
+"      </ul>"
+msgstr ""
+"<p>Rolurile vă permit să reglaţi cu fineţe siguranţa şi administrarea "
+"Drupal. Un rol defineşte un grup de utilizatori care au aceleaşi privilegii "
+"aşa cum este definit în <a href=\"@permissions\">permisiuni utilizatori</a>. "
+"Exemple de roluri includ: utilizator anonim, utilizatoe autentificat, "
+"moderator, administrator, etc. În acestă zonă veţi defini <em>numele "
+"rolurilor</em>. Pentru a şterge un rol alegeţi  \"editare\".</p><p>Implicit "
+"Drupal conţine două roluri predefinite:</p>\n"
+"      <ul>\n"
+"      <li>utilizator anonim: acest rol este utilizat pentru utilizatorii "
+"care nu au un cont sau nu sunt autentificaţi.</li>\n"
+"      <li>utilizator autentificat: acest rol este acordat automat tuturor "
+"utilizatorilor autentificaţi.</li>\n"
+"      </ul>"
+
+#: modules/user/user.module:1892
+msgid ""
+"Enter a simple pattern (\"*\" may be used as a wildcard match) to search for "
+"a username or e-mail address. For example, one may search for \"br\" and "
+"Drupal might return \"brian\", \"brad\", and \"brenda@example.com\"."
+msgstr ""
+"Introduceţi o mască simplă (\"*\" poate fi folosit pentru potrivire "
+"generală) pentru a căuta un utilizator sau o adresă de e-mail. De exemplu o "
+"căutare după \"br\" poate găsi \"brian\", \"brad\" şi \"brenda\"example.com"
+"\"."
+
+#: modules/user/user.module:1929
+msgid "role"
+msgstr "rol"
+
+#: modules/user/user.module:1947
+msgid "permission"
+msgstr "permisiune"
+
+#: modules/user/user.module:2149
+msgid "Password strength:"
+msgstr "Tăria parolei:"
+
+#: modules/user/user.module:2150
+msgid "Low"
+msgstr "Joasă"
+
+#: modules/user/user.module:2152
+msgid "High"
+msgstr ""
+
+#: modules/user/user.module:2153
+msgid ""
+"It is recommended to choose a password that contains at least six "
+"characters. It should include numbers, punctuation, and both upper and "
+"lowercase letters."
+msgstr ""
+
+#: modules/user/user.module:2154
+msgid "The password does not include enough variation to be secure. Try:"
+msgstr ""
+
+#: modules/user/user.module:2155
+msgid "Adding both upper and lowercase letters."
+msgstr ""
+
+#: modules/user/user.module:2156
+msgid "Adding numbers."
+msgstr ""
+
+#: modules/user/user.module:2157
+msgid "Adding punctuation."
+msgstr ""
+
+#: modules/user/user.module:2158
+msgid "It is recommended to choose a password different from the username."
+msgstr ""
+
+#: modules/user/user.module:2161
+msgid "Passwords match:"
+msgstr "Verificare parolă:"
+
+#: modules/user/user.module:2176
+msgid "After a user account has been created"
+msgstr "După ce un cont utilizator a fost creat"
+
+#: modules/user/user.module:2179
+msgid "After a user's profile has been updated"
+msgstr "După ce un profil utilizator a fost actualizat"
+
+#: modules/user/user.module:2182
+msgid "After a user has been deleted"
+msgstr "După ce un utilizator a fost şters"
+
+#: modules/user/user.module:2185
+msgid "After a user has logged in"
+msgstr ""
+
+#: modules/user/user.module:2188
+msgid "After a user has logged out"
+msgstr ""
+
+#: modules/user/user.module:2191
+msgid "When a user's profile is being viewed"
+msgstr ""
+
+#: modules/user/user.module:2204
+msgid "Block current user"
+msgstr "Blochează utilizator curent"
+
+#: modules/user/user.module:2210
+msgid "Ban IP address of current user"
+msgstr ""
+
+#: modules/user/user.module:2303
+msgid ""
+"Welcome to Drupal. You are now logged in as user #1, which gives you full "
+"control over your website."
+msgstr ""
+
+#: modules/user/user.module:2305
+msgid ""
+"</p><p> Your password is <strong>%pass</strong>. You may change your "
+"password below.</p>"
+msgstr ""
+
+#: modules/user/user.module:2317
+msgid ""
+"Created a new user account for <a href=\"@url\">%name</a>. No e-mail has "
+"been sent."
+msgstr ""
+"Un nou cont de utilizator pentru <a href=\"@url\">%name</a> a fost creat. Nu "
+"a fost trimis nici un e-mail."
+
+#: modules/user/user.module:2324
+msgid "Registration successful. You are now logged in."
+msgstr ""
+
+#: modules/user/user.module:2334
+msgid ""
+"Password and further instructions have been e-mailed to the new user <a href="
+"\"@url\">%name</a>."
+msgstr ""
+"Parola dumneavoastră împreună cu alte instrucţiuni a fost trimisă noului "
+"utilizator <a href=\"@url\">%name</a>."
+
+#: modules/user/user.module:2337
+msgid ""
+"Your password and further instructions have been sent to your e-mail address."
+msgstr ""
+"Parola dumneavoastră, împreună cu alte instrucţiuni, a fost trimisă la "
+"adresa dumneavoastră de e-mail."
+
+#: modules/user/user.module:2345
+msgid ""
+"Thank you for applying for an account. Your account is currently pending "
+"approval by the site administrator.<br />In the meantime, a welcome message "
+"with further instructions has been sent to your e-mail address."
+msgstr ""
+"Vă mulţumim pentru înscrierea pe acest sit. În acest moment, contul "
+"dumneavoastră aşteaptă aprobarea administratorului.<br /> Între timp vi-a "
+"fost trimis, pe adresa de e-mail furnizată, un mesaj de bun venit care "
+"conţine şi instrucţiuni preliminarii."
+
+#: modules/user/user.module:2382
+msgid "Notify user of new account"
+msgstr "Înştiinţează utilizatorul că a fost creat contul nou."
+
+#: modules/user/user.module:1314
+msgid "Login attempt failed for %user."
+msgstr "Încercare eşuată de autentificare pentru %user."
+
+#: modules/user/user.module:1351
+msgid "Session opened for %name."
+msgstr "A fost deschisă sesiunea pentru %name."
+
+#: modules/user/user.module:1400
+msgid "New external user: %name using module %module."
+msgstr "Utilizator extern nou: %name utilizând modulul %module."
+
+#: modules/user/user.module:1577
+msgid "Deleted user: %name %email."
+msgstr "Am şters cont utilizator: %name %email."
+
+#: modules/user/user.module:2235
+msgid "Blocked user %name."
+msgstr "Utilizator blocat %name."
+
+#: modules/user/user.module:2245
+msgid "Banned IP address %ip"
+msgstr ""
+
+#: modules/user/user.module:2299
+msgid "New user: %name (%email)."
+msgstr "Utilizator nou: %name (%email)."
+
+#: modules/user/user.module:776;779
+msgid "1 guest"
+msgid_plural "@count guests"
+msgstr[0] "1 vizitator"
+msgstr[1] "@count vizitatori"
+
+#: modules/user/user.module:544
+msgid "administer permissions"
+msgstr "administrare permisiuni"
+
+#: modules/user/user.module:544
+msgid "administer users"
+msgstr "administrează utilizatorii"
+
+#: modules/user/user.module:544
+msgid "access user profiles"
+msgstr "accesează profilele utilizatorilor"
+
+#: modules/user/user.module:544
+msgid "change own username"
+msgstr "schimbare nume propriu de utilizator"
+
+#: modules/user/user.module:884
+msgid "User autocomplete"
+msgstr "Completare automată nume cont"
+
+#: modules/user/user.module:894
+msgid "User account"
+msgstr "Cont utilizator"
+
+#: modules/user/user.module:925
+msgid "Reset password"
+msgstr "Resetare parolă"
+
+#: modules/user/user.module:935
+msgid "User management"
+msgstr "Gestiune utilizator"
+
+#: modules/user/user.module:936
+msgid "Manage your site's users, groups and access to site features."
+msgstr ""
+"Gestionează utilizatorii, grupurile şi accesul către facilităţile sitului."
+
+#: modules/user/user.module:945
+msgid "List, add, and edit users."
+msgstr "Afişează, adaugă şi editează utilizatori."
+
+#: modules/user/user.module:957
+msgid "Add user"
+msgstr "Adaugă utilizator"
+
+#: modules/user/user.module:963
+msgid "User settings"
+msgstr "Configurare utilizator"
+
+#: modules/user/user.module:964
+msgid ""
+"Configure default behavior of users, including registration requirements, e-"
+"mails, and user pictures."
+msgstr ""
+"Configurează comportamentul implicit al utilizatorilor, incluzând "
+"necesităţile de înregistrare, email-uri şi pozele utilizatorilor."
+
+#: modules/user/user.module:973
+msgid "Permissions"
+msgstr "Permisiuni"
+
+#: modules/user/user.module:974
+msgid "Determine access to features by selecting permissions for roles."
+msgstr ""
+"Determină accesul la facilitaţi prin selectarea permisiunilor pentru roluri."
+
+#: modules/user/user.module:982
+msgid "List, edit, or add user roles."
+msgstr "Afişează, editează sau adaugă roluri utilizator."
+
+#: modules/user/user.module:989
+msgid "Edit role"
+msgstr "Editează rol"
+
+#: modules/user/user.module:995
+msgid "Access rules"
+msgstr "Reguli acces"
+
+#: modules/user/user.module:996
+msgid ""
+"List and create rules to disallow usernames, e-mail addresses, and IP "
+"addresses."
+msgstr ""
+"Afişează şi crează reguli pentru a nu restricţiona nume utilizatori, adrese "
+"mail şi adrese IP."
+
+#: modules/user/user.module:1013
+msgid "Check rules"
+msgstr "Verifică regulile"
+
+#: modules/user/user.module:1019
+msgid "Edit rule"
+msgstr "Editează regulă"
+
+#: modules/user/user.module:1025
+msgid "Delete rule"
+msgstr "Şterge regulă"
+
+#: modules/user/user.module:1033
+msgid "Log out"
+msgstr "Ieşire"
+
+#: modules/user/user.module:1080
+msgid "Account"
+msgstr "Cont"
+
+#: modules/user/user.module:0
+msgid "anonymous user"
+msgstr "utilizator anonim"
+
+#: modules/user/user.module:0
+msgid "authenticated user"
+msgstr "utilizator autentificat"
+
+#: modules/user/user.install:9
+msgid "Stores site access rules."
+msgstr ""
+
+#: modules/user/user.install:14
+msgid "Primary Key: Unique access ID."
+msgstr ""
+
+#: modules/user/user.install:21
+msgid "Text mask used for filtering access."
+msgstr ""
+
+#: modules/user/user.install:28
+msgid "Type of access rule: name, mail or host."
+msgstr ""
+
+#: modules/user/user.install:35
+msgid "Whether rule is to allow(1) or deny(0) access."
+msgstr ""
+
+#: modules/user/user.install:42
+msgid "Stores distributed authentication mapping."
+msgstr "Stochează relaţioanrea autentificării distribuite."
+
+#: modules/user/user.install:45
+msgid "Primary Key: Unique authmap ID."
+msgstr ""
+
+#: modules/user/user.install:54
+msgid "User's {users}.uid."
+msgstr ""
+
+#: modules/user/user.install:61
+msgid "Unique authentication name."
+msgstr "Nume unic de autentificare."
+
+#: modules/user/user.install:68
+msgid "Module which is controlling the authentication."
+msgstr ""
+
+#: modules/user/user.install:76
+msgid "Stores permissions for users."
+msgstr "Stochează permisiunile pentru utilizatori."
+
+#: modules/user/user.install:81
+msgid "Primary Key: Unique permission ID."
+msgstr ""
+
+#: modules/user/user.install:88
+msgid "The {role}.rid to which the permissions are assigned."
+msgstr "{role}.rid la care vor fi atribuite permisiunile."
+
+#: modules/user/user.install:94
+msgid "List of permissions being assigned."
+msgstr ""
+
+#: modules/user/user.install:101
+msgid "Originally intended for taxonomy-based permissions, but never used."
+msgstr ""
+
+#: modules/user/user.install:109
+msgid "Stores user roles."
+msgstr "Stochează rolurile utilizator."
+
+#: modules/user/user.install:115
+msgid "Primary Key: Unique role id."
+msgstr ""
+
+#: modules/user/user.install:122
+msgid "Unique role name."
+msgstr "Numele unic al rolului."
+
+#: modules/user/user.install:130
+msgid "Stores user data."
+msgstr ""
+
+#: modules/user/user.install:136
+msgid "Primary Key: Unique user ID."
+msgstr ""
+
+#: modules/user/user.install:143
+msgid "Unique user name."
+msgstr "Numele unic al utilizatorului."
+
+#: modules/user/user.install:150
+msgid "User's password (md5 hash)."
+msgstr ""
+
+#: modules/user/user.install:157
+msgid "User's email address."
+msgstr "Adresa de e-mail al utilizatorului."
+
+#: modules/user/user.install:164
+msgid ""
+"Per-user comment display mode (threaded vs. flat), used by the {comment} "
+"module."
+msgstr ""
+
+#: modules/user/user.install:171
+msgid ""
+"Per-user comment sort order (newest vs. oldest first), used by the {comment} "
+"module."
+msgstr ""
+
+#: modules/user/user.install:178
+msgid ""
+"Previously used by the {comment} module for per-user preferences; no longer "
+"used."
+msgstr ""
+
+#: modules/user/user.install:185
+msgid "User's default theme."
+msgstr "Tema implicită a utilizatorului."
+
+#: modules/user/user.install:192
+msgid "User's signature."
+msgstr "Semnătura utilizatorului."
+
+#: modules/user/user.install:198
+msgid "Timestamp for when user was created."
+msgstr ""
+
+#: modules/user/user.install:204
+msgid "Timestamp for previous time user accessed the site."
+msgstr ""
+
+#: modules/user/user.install:210
+msgid "Timestamp for user's last login."
+msgstr ""
+
+#: modules/user/user.install:217
+msgid "Whether the user is active(1) or blocked(0)."
+msgstr ""
+
+#: modules/user/user.install:223
+msgid "User's timezone."
+msgstr "Fusul orar al utilizatorului."
+
+#: modules/user/user.install:230
+msgid "User's default language."
+msgstr "Limba implicită a utilizatorului."
+
+#: modules/user/user.install:237
+msgid "Path to the user's uploaded picture."
+msgstr ""
+
+#: modules/user/user.install:244
+msgid "Email address used for initial account creation."
+msgstr ""
+
+#: modules/user/user.install:250
+msgid ""
+"A serialized array of name value pairs that are related to the user. Any "
+"form values posted during user edit are stored and are loaded into the $user "
+"object during user_load(). Use of this field is discouraged and it will "
+"likely disappear in a future version of Drupal."
+msgstr ""
+
+#: modules/user/user.install:265
+msgid "Maps users to roles."
+msgstr "Realţionează utilizatorii cu rolurile."
+
+#: modules/user/user.install:272
+msgid "Primary Key: {users}.uid for user."
+msgstr ""
+
+#: modules/user/user.install:279
+msgid "Primary Key: {role}.rid for role."
+msgstr ""

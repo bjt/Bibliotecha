@@ -1,0 +1,670 @@
+# Romanian translation of Drupal interface
+# License - GPL.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Drupal 5.0\n"
+"POT-Creation-Date: 2008-02-15 13:50+0100\n"
+"PO-Revision-Date: 2007-02-18 21:23+0200\n"
+"Last-Translator: Claudiu Cristea <clau.cristea@gmail.com>\n"
+"Language-Team: Romanian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: KBabel 1.10.1\n"
+"X-Poedit-Language: Romanian\n"
+"X-Poedit-Country: ROMANIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: modules/filter/filter.admin.inc:33
+msgid "All roles may use default format"
+msgstr "Toate rolurile pot folosi formatul implicit"
+
+#: modules/filter/filter.admin.inc:33
+msgid "No roles may use this format"
+msgstr "Nici un rol nu poate folosi acest format"
+
+#: modules/filter/filter.admin.inc:38
+msgid "Set default format"
+msgstr "Setează formatul implicit"
+
+#: modules/filter/filter.admin.inc:45
+msgid "Default format updated."
+msgstr "Formatul implicit actualizat."
+
+#: modules/filter/filter.admin.inc:81 modules/filter/filter.module:83
+msgid "Add input format"
+msgstr "Adaugă format de intrare"
+
+#: modules/filter/filter.admin.inc:97
+msgid "All roles for the default format must be enabled and cannot be changed."
+msgstr ""
+"Toate rolurile pentru formatul implicit trebuie activate şi nu pot fi "
+"schimbate."
+
+#: modules/filter/filter.admin.inc:104
+msgid "Specify a unique name for this filter format."
+msgstr "Dă un nume unic acestui filtru de format."
+
+#: modules/filter/filter.admin.inc:111
+msgid ""
+"Choose which roles may use this filter format. Note that roles with the "
+"\"administer filters\" permission can always use all the filter formats."
+msgstr ""
+"Alegeţi ce roluri pot folosi acest filtru de format. Nu uitaţi ca toate "
+"rolurile care au permisiunea \"administrare filtre\" pot folosi întotdeauna "
+"filtrele de format."
+
+#: modules/filter/filter.admin.inc:130
+msgid "Filters"
+msgstr "Filtre"
+
+#: modules/filter/filter.admin.inc:131
+msgid "Choose the filters that will be used in this filter format."
+msgstr "Alege filtrele care vor fi folosite în acest filtru de format."
+
+#: modules/filter/filter.admin.inc:146 modules/filter/filter.module:583
+msgid "More information about formatting options"
+msgstr "Mai multe informaţii despre opţiunile de filtrare"
+
+#: modules/filter/filter.admin.inc:149
+msgid "No guidelines available."
+msgstr "Nu exista ghiduri."
+
+#: modules/filter/filter.admin.inc:151
+msgid ""
+"These are the guidelines that users will see for posting in this input "
+"format. They are automatically generated from the filter settings."
+msgstr ""
+"Acestea sunt sfaturile pe care utilizatorii le văd când postează în acest "
+"format. Ele sunt generate automat din setările filtrului."
+
+#: modules/filter/filter.admin.inc:153 modules/filter/filter.module:512
+msgid "Formatting guidelines"
+msgstr "Reguli de formatare"
+
+#: modules/filter/filter.admin.inc:168
+msgid ""
+"Filter format names need to be unique. A format named %name already exists."
+msgstr ""
+"Numele filtrelor de formatare a textului trebuie să fie unice. Un format cu "
+"numele %name există deja."
+
+#: modules/filter/filter.admin.inc:187
+msgid "Added input format %format."
+msgstr "Formatul de intrare %format a fost adăugat."
+
+#: modules/filter/filter.admin.inc:190
+msgid "The input format settings have been updated."
+msgstr "Setările formatului de intrare au fost actualizate."
+
+#: modules/filter/filter.admin.inc:252
+msgid "Are you sure you want to delete the input format %format?"
+msgstr "Sigur doreşti să ştergi formatul de intrare %format?"
+
+#: modules/filter/filter.admin.inc:252
+msgid ""
+"If you have any content left in this input format, it will be switched to "
+"the default input format. This action cannot be undone."
+msgstr ""
+"Dacă există conţinut în acest format, el va fi comutat pe formatul implicit. "
+"Această acţiune este ireversibilă."
+
+#: modules/filter/filter.admin.inc:255
+msgid "The default format cannot be deleted."
+msgstr "Formatul implicit nu poate fi şters."
+
+#: modules/filter/filter.admin.inc:278
+msgid "Deleted input format %format."
+msgstr "Şterge formatul de intrare %format."
+
+#: modules/filter/filter.admin.inc:312
+msgid "No settings are available."
+msgstr "Nu există opţiuni."
+
+#: modules/filter/filter.admin.inc:391
+msgid "The filter ordering has been saved."
+msgstr "Ordinea filtrelor a fost salvată."
+
+#: modules/filter/filter.pages.inc:35
+msgid "input formats"
+msgstr "formate de intrare"
+
+#: modules/filter/filter.module:23
+msgid ""
+"The filter module allows administrators to configure text input formats for "
+"use on your site. An input format defines the HTML tags, codes, and other "
+"input allowed in both content and comments, and is a key feature in guarding "
+"against potentially damaging input from malicious users. Two input formats "
+"included by default are <em>Filtered HTML</em> (which allows only an "
+"administrator-approved subset of HTML tags) and <em>Full HTML</em> (which "
+"allows the full set of HTML tags). Additional input formats may be created "
+"by an administrator."
+msgstr ""
+
+#: modules/filter/filter.module:24
+msgid ""
+"Each input format uses filters to manipulate text, and most input formats "
+"apply several different filters to text in a specific order. Each filter is "
+"designed for a specific purpose, and generally either adds, removes or "
+"transforms elements within user-entered text before it is displayed. A "
+"filter does not change the actual content of a post, but instead, modifies "
+"it temporarily before it is displayed. A filter may remove unapproved HTML "
+"tags, for instance, while another automatically adds HTML to make links "
+"referenced in text clickable."
+msgstr ""
+
+#: modules/filter/filter.module:29
+msgid ""
+"<em>Input formats</em> define a way of processing user-supplied text in "
+"Drupal. Each input format uses filters to manipulate text, and most input "
+"formats apply several different filters to text, in a specific order. Each "
+"filter is designed to accomplish a specific purpose, and generally either "
+"removes elements from or adds elements to text before it is displayed. Users "
+"can choose between the available input formats when submitting content."
+msgstr ""
+
+#: modules/filter/filter.module:35
+msgid ""
+"If you cannot find the settings for a certain filter, make sure you have "
+"enabled it on the <a href=\"@url\">view tab</a> first."
+msgstr ""
+"Dacă nu găseşti setările pentru un filtru anume, asigură-te că filtrul este "
+"activat la <a href=\"@url\">view tab</a>."
+
+#: modules/filter/filter.module:38
+msgid ""
+"Filters are executed from top-to-bottom. To change the order of the filters, "
+"modify the values in the <em>Weight</em> column or grab a drag-and-drop "
+"handle under the <em>Name</em> column and drag filters to new locations in "
+"the list. (Grab a handle by clicking and holding the mouse while hovering "
+"over a handle icon.) Remember that your changes will not be saved until you "
+"click the <em>Save configuration</em> button at the bottom of the page."
+msgstr ""
+
+#: modules/filter/filter.module:183
+msgid ""
+"\n"
+"<p>This site allows HTML content. While learning all of HTML may feel "
+"intimidating, learning how to use a very small number of the most basic HTML "
+"\"tags\" is very easy. This table provides examples for each tag that is "
+"enabled on this site.</p>\n"
+"<p>For more information see W3C's <a href=\"http://www.w3.org/TR/html/"
+"\">HTML Specifications</a> or use your favorite search engine to find other "
+"sites that explain HTML.</p>"
+msgstr ""
+"\n"
+"<p>Acest sit permite conţinut HTML. În timp ce învăţatul întregului limbaj "
+"HTML poate părea înspăimântător, învăţarea folosirii câtorva \"etichete"
+"\" (taguri) HTML este rapidă şi uşoară. Acest tabel vă prezintă exemple "
+"pentru fiecare tag permis pe acest sit.</p>\n"
+"<p>Pentru mai multe detalii, urmăriţi <a href=\"http://www.w3.org/TR/html/"
+"\">Specificaţiile HTML</a> de la W3C sau folosiţi motorul dumneavoastră de "
+"căutare preferat pentru a găsi alte situri ce explică gramatica HTML.</p>"
+
+#: modules/filter/filter.module:187
+msgid "Anchors are used to make links to other pages."
+msgstr "Ancorele sunt folosite pentru a face legături către alte pagini."
+
+#: modules/filter/filter.module:188
+msgid ""
+"By default line break tags are automatically added, so use this tag to add "
+"additional ones. Use of this tag is different because it is not used with an "
+"open/close pair like all the others. Use the extra \" /\" inside the tag to "
+"maintain XHTML 1.0 compatibility"
+msgstr ""
+"By default line break tags are automatically added, so use this tag to add "
+"additional ones. Use of this tag is different because it is not used with an "
+"open/close pair like all the others. Use the extra \" /\" inside the tag to "
+"maintain XHTML 1.0 compatibility"
+
+#: modules/filter/filter.module:188
+msgid "Text with <br />line break"
+msgstr "Text cu <br />terminatori de linie"
+
+#: modules/filter/filter.module:189
+msgid ""
+"By default paragraph tags are automatically added, so use this tag to add "
+"additional ones."
+msgstr ""
+"By default paragraph tags are automatically added, so use this tag to add "
+"additional ones."
+
+#: modules/filter/filter.module:189
+msgid "Paragraph one."
+msgstr "Primul paragraf."
+
+#: modules/filter/filter.module:189
+msgid "Paragraph two."
+msgstr "Paragraful al doilea."
+
+#: modules/filter/filter.module:190;190
+msgid "Strong"
+msgstr "Aldin"
+
+#: modules/filter/filter.module:191;191
+msgid "Emphasized"
+msgstr "Accentuat"
+
+#: modules/filter/filter.module:192;192
+msgid "Cited"
+msgstr "Citat"
+
+#: modules/filter/filter.module:193
+msgid "Coded text used to show programming source code"
+msgstr "Text codificat pentru a exemplifica sursele codurilor de programare"
+
+#: modules/filter/filter.module:193
+msgid "Coded"
+msgstr "Codat"
+
+#: modules/filter/filter.module:194;194
+msgid "Bolded"
+msgstr "Îngroşat"
+
+#: modules/filter/filter.module:195;195
+msgid "Underlined"
+msgstr "Subliniat"
+
+#: modules/filter/filter.module:196;196
+msgid "Italicized"
+msgstr "Cursiv"
+
+#: modules/filter/filter.module:197
+msgid "Superscripted"
+msgstr "Superscris"
+
+#: modules/filter/filter.module:197
+msgid "<sup>Super</sup>scripted"
+msgstr "<sup>Super</sup>scris"
+
+#: modules/filter/filter.module:198
+msgid "Subscripted"
+msgstr "Subliniat"
+
+#: modules/filter/filter.module:198
+msgid "<sub>Sub</sub>scripted"
+msgstr "<sub>Sub</sub>scris"
+
+#: modules/filter/filter.module:199;199
+msgid "Preformatted"
+msgstr "Preformatat"
+
+#: modules/filter/filter.module:200
+msgid "Abbreviation"
+msgstr "Prescurtare"
+
+#: modules/filter/filter.module:200
+msgid "<abbr title=\"Abbreviation\">Abbrev.</abbr>"
+msgstr "<abbr title=\"Prescurtare\">Presc.</abbr>"
+
+#: modules/filter/filter.module:201
+msgid "Acronym"
+msgstr "Acronim"
+
+#: modules/filter/filter.module:201
+msgid "<acronym title=\"Three-Letter Acronym\">TLA</acronym>"
+msgstr "<acronym title=\"Acronim Din Patru Litere\">ADPL</acronym>"
+
+#: modules/filter/filter.module:202;202
+msgid "Block quoted"
+msgstr "Citat bloc"
+
+#: modules/filter/filter.module:203;203
+msgid "Quoted inline"
+msgstr "Citat în linie"
+
+#: modules/filter/filter.module:205
+msgid "Table"
+msgstr "Tabel"
+
+#: modules/filter/filter.module:205
+msgid "Table header"
+msgstr "Cap de tabel"
+
+#: modules/filter/filter.module:205
+msgid "Table cell"
+msgstr "Celula de tabel"
+
+#: modules/filter/filter.module:207;207
+msgid "Deleted"
+msgstr "Şters"
+
+#: modules/filter/filter.module:208;208
+msgid "Inserted"
+msgstr "Inserat"
+
+#: modules/filter/filter.module:210
+msgid "Ordered list - use the &lt;li&gt; to begin each list item"
+msgstr ""
+"Listă ordonată - pentru a începe fiecare element din listă utilizează &lt;"
+"li&gt; "
+
+#: modules/filter/filter.module:210;211
+msgid "First item"
+msgstr "Primul articol"
+
+#: modules/filter/filter.module:210;211
+msgid "Second item"
+msgstr "Al doilea articol"
+
+#: modules/filter/filter.module:211
+msgid "Unordered list - use the &lt;li&gt; to begin each list item"
+msgstr ""
+"Listă neordonată - pentru a începe fiecare element din listă utilizează &lt;"
+"li&gt; "
+
+#: modules/filter/filter.module:214
+msgid ""
+"Definition lists are similar to other HTML lists. &lt;dl&gt; begins the "
+"definition list, &lt;dt&gt; begins the definition term and &lt;dd&gt; begins "
+"the definition description."
+msgstr ""
+"Listele de definiţii sunt similare cu alte liste HTML. &lt;dl&gt; începe "
+"lista de defint, &lt;dt&gt; începe termenul de definit şi &lt;dd&gt; începe "
+"descrierea de definit."
+
+#: modules/filter/filter.module:214
+msgid "First term"
+msgstr "Primul termen"
+
+#: modules/filter/filter.module:214
+msgid "First definition"
+msgstr "Prima definiţie"
+
+#: modules/filter/filter.module:214
+msgid "Second term"
+msgstr "Al doilea termen"
+
+#: modules/filter/filter.module:214
+msgid "Second definition"
+msgstr "A doua definiţie"
+
+#: modules/filter/filter.module:217
+msgid "Subtitle"
+msgstr "Subtitlu"
+
+#: modules/filter/filter.module:218
+msgid "Subtitle three"
+msgstr "Subtitlu trei"
+
+#: modules/filter/filter.module:219
+msgid "Subtitle four"
+msgstr "Subtitlu patru"
+
+#: modules/filter/filter.module:220
+msgid "Subtitle five"
+msgstr "Subtitlu cinci"
+
+#: modules/filter/filter.module:221
+msgid "Subtitle six"
+msgstr "Subtitlu şase"
+
+#: modules/filter/filter.module:223
+msgid "Tag Description"
+msgstr "Descrierea tag-ului"
+
+#: modules/filter/filter.module:223;252
+msgid "You Type"
+msgstr "Tu scrii"
+
+#: modules/filter/filter.module:223;252
+msgid "You Get"
+msgstr "Tu primeşti"
+
+#: modules/filter/filter.module:237
+msgid "No help provided for tag %tag."
+msgstr "Nu exista ajutor pentru tag-ul %tag."
+
+#: modules/filter/filter.module:243
+msgid ""
+"\n"
+"<p>Most unusual characters can be directly entered without any problems.</"
+"p>\n"
+"<p>If you do encounter problems, try using HTML character entities. A common "
+"example looks like &amp;amp; for an ampersand &amp; character. For a full "
+"list of entities see HTML's <a href=\"http://www.w3.org/TR/html4/sgml/"
+"entities.html\">entities</a> page. Some of the available characters include:"
+"</p>"
+msgstr ""
+"\n"
+"<p>Most unusual characters can be directly entered without any problems.</"
+"p>\n"
+"<p>If you do encounter problems, try using HTML character entities. A common "
+"example looks like &amp;amp; for an ampersand &amp; character. For a full "
+"list of entities see HTML's <a href=\"http://www.w3.org/TR/html4/sgml/"
+"entities.html\">entities</a> page. Some of the available characters include:"
+"</p>"
+
+#: modules/filter/filter.module:247
+msgid "Ampersand"
+msgstr "Ampersand"
+
+#: modules/filter/filter.module:248
+msgid "Greater than"
+msgstr "Mai mare"
+
+#: modules/filter/filter.module:249
+msgid "Less than"
+msgstr "Mai mic"
+
+#: modules/filter/filter.module:250
+msgid "Quotation mark"
+msgstr "Ghilimele"
+
+#: modules/filter/filter.module:252
+msgid "Character Description"
+msgstr "Descrierea caracterului"
+
+#: modules/filter/filter.module:266
+msgid "No HTML tags allowed"
+msgstr "Nu sunt permise taguri HTML"
+
+#: modules/filter/filter.module:274
+msgid "Lines and paragraphs break automatically."
+msgstr "Liniile şi paragrafele sunt rupte automat."
+
+#: modules/filter/filter.module:276
+msgid ""
+"Lines and paragraphs are automatically recognized. The &lt;br /&gt; line "
+"break, &lt;p&gt; paragraph and &lt;/p&gt; close paragraph tags are inserted "
+"automatically. If paragraphs are not recognized simply add a couple blank "
+"lines."
+msgstr ""
+"Liniile şi paragrafele sunt recunoscute automat. Tag-urile &lt;br /&gt; line "
+"break, &lt;p&gt; paragraf şi &lt;/p&gt; închide paragraf sunt inserate "
+"automat. Dacă paragrafele nu sunt recunoscute adaugă doar câteva linii goale."
+
+#: modules/filter/filter.module:280
+msgid "Web page addresses and e-mail addresses turn into links automatically."
+msgstr ""
+"Adresele de situri web şi adresele de e-mail se transformă automat în "
+"linkuri."
+
+#: modules/filter/filter.module:484
+msgid "Input format"
+msgstr "Format de intrare"
+
+#: modules/filter/filter.module:604;655
+msgid "HTML filter"
+msgstr "Filtru HTML"
+
+#: modules/filter/filter.module:604
+msgid "Line break converter"
+msgstr "Line break converter"
+
+#: modules/filter/filter.module:604;715
+msgid "URL filter"
+msgstr "Filtru URL"
+
+#: modules/filter/filter.module:604
+msgid "HTML corrector"
+msgstr ""
+
+#: modules/filter/filter.module:609
+msgid ""
+"Allows you to restrict whether users can post HTML and which tags to filter "
+"out. It will also remove harmful content such as JavaScript events, "
+"JavaScript URLs and CSS styles from those tags that are not removed."
+msgstr ""
+
+#: modules/filter/filter.module:611
+msgid "Converts line breaks into HTML (i.e. &lt;br&gt; and &lt;p&gt; tags)."
+msgstr "Converteşte liniile rupte în HTML (tag-urile &lt;br&gt; şi &lt;p&gt;)."
+
+#: modules/filter/filter.module:613
+msgid "Turns web and e-mail addresses into clickable links."
+msgstr "Transformă adresele de e-mail în linkuri."
+
+#: modules/filter/filter.module:615
+msgid "Corrects faulty and chopped off HTML in postings."
+msgstr ""
+
+#: modules/filter/filter.module:660
+msgid "Filter HTML tags"
+msgstr "Filtrează tagurile HTML"
+
+#: modules/filter/filter.module:662
+msgid "Strip disallowed tags"
+msgstr "Strip disallowed tags"
+
+#: modules/filter/filter.module:662
+msgid "Escape all tags"
+msgstr "Escape all tags"
+
+#: modules/filter/filter.module:663
+msgid ""
+"How to deal with HTML tags in user-contributed content. If set to \"Strip "
+"disallowed tags\", dangerous tags are removed (see below). If set to "
+"\"Escape tags\", all HTML is escaped and presented as it was typed."
+msgstr ""
+"How to deal with HTML tags in user-contributed content. If set to \"Strip "
+"disallowed tags\", dangerous tags are removed (see below). If set to "
+"\"Escape tags\", all HTML is escaped and presented as it was typed."
+
+#: modules/filter/filter.module:671
+msgid ""
+"If \"Strip disallowed tags\" is selected, optionally specify tags which "
+"should not be stripped. JavaScript event attributes are always stripped."
+msgstr ""
+"If \"Strip disallowed tags\" is selected, optionally specify tags which "
+"should not be stripped. JavaScript event attributes are always stripped."
+
+#: modules/filter/filter.module:675
+msgid "Display HTML help"
+msgstr "Afişează ajutor HTML"
+
+#: modules/filter/filter.module:677
+msgid ""
+"If enabled, Drupal will display some basic HTML help in the long filter tips."
+msgstr "Dacă este activată opţiunea, Drupal va afişa un ajutor elementar HTML."
+
+#: modules/filter/filter.module:681
+msgid "Spam link deterrent"
+msgstr "Spam link deterrent"
+
+#: modules/filter/filter.module:683
+msgid ""
+"If enabled, Drupal will add rel=\"nofollow\" to all links, as a measure to "
+"reduce the effectiveness of spam links. Note: this will also prevent valid "
+"links from being followed by search engines, therefore it is likely most "
+"effective when enabled for anonymous users."
+msgstr ""
+"Dacă opţiunea este activată, Drupal va adăuga rel=\"nofollow\" tuturor link-"
+"urilor, ca o măsură de a reduce efectele link-urilor spam. Reţine că nici "
+"link-urile valide nu vor fi urmate de către motoarele de căutare; prin "
+"urmare este bine ca opţiunea să fie activată doar pentru utilizatorii "
+"anonimi."
+
+#: modules/filter/filter.module:720
+msgid "Maximum link text length"
+msgstr "Lungimea maximă pentru şirul text"
+
+#: modules/filter/filter.module:723
+msgid ""
+"URLs longer than this number of characters will be truncated to prevent long "
+"strings that break formatting. The link itself will be retained; just the "
+"text portion of the link will be truncated."
+msgstr ""
+"URL-urile mai lungi decât acest număr de caractere vor fi trunchiate pentru "
+"a preveni şirurile de caractere lungi care rup formatul. Linkul va fi "
+"reţinut, doar partea text a linkului va fi trunchiată."
+
+#: modules/filter/filter.module:153
+msgid "administer filters"
+msgstr "administrează filtrele"
+
+#: modules/filter/filter.module:71
+msgid "Input formats"
+msgstr "Formate de intrare"
+
+#: modules/filter/filter.module:90
+msgid "Delete input format"
+msgstr "Şterge format de intrare"
+
+#: modules/filter/filter.module:97
+msgid "Compose tips"
+msgstr "Sfaturi pentru compunere"
+
+#: modules/filter/filter.module:128
+msgid "Rearrange"
+msgstr "Rearanjează"
+
+#: modules/filter/filter.module:0
+msgid "filter"
+msgstr "filtru"
+
+#: modules/filter/filter.install:9
+msgid ""
+"Table that maps filters (HTML corrector) to input formats (Filtered HTML)."
+msgstr ""
+
+#: modules/filter/filter.install:14
+msgid "Primary Key: Auto-incrementing filter ID."
+msgstr ""
+
+#: modules/filter/filter.install:20
+msgid ""
+"Foreign key: The {filter_formats}.format to which this filter is assigned."
+msgstr ""
+
+#: modules/filter/filter.install:27
+msgid "The origin module of the filter."
+msgstr ""
+
+#: modules/filter/filter.install:34
+msgid "ID to identify which filter within module is being referenced."
+msgstr ""
+
+#: modules/filter/filter.install:41
+msgid "Weight of filter within format."
+msgstr ""
+
+#: modules/filter/filter.install:53
+msgid ""
+"Stores input formats: custom groupings of filters, such as Filtered HTML."
+msgstr ""
+
+#: modules/filter/filter.install:58
+msgid "Primary Key: Unique ID for format."
+msgstr ""
+
+#: modules/filter/filter.install:65
+msgid "Name of the input format (Filtered HTML)."
+msgstr ""
+
+#: modules/filter/filter.install:72
+msgid "A comma-separated string of roles; references {role}.rid."
+msgstr ""
+
+#: modules/filter/filter.install:79
+msgid ""
+"Flag to indicate whether format is cachable. (1 = cachable, 0 = not cachable)"
+msgstr ""
+
+#: modules/filter/filter.install:87
+msgid ""
+"Cache table for the Filter module to store already filtered pieces of text, "
+"identified by input format and md5 hash of the text."
+msgstr ""

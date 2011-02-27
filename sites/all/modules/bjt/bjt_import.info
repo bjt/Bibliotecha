@@ -1,0 +1,5 @@
+; $Id$
+name = BJT Importer
+description = "Importare date din xml-uri"
+package = GeekMeet24
+core = 6.x
