@@ -62,6 +62,20 @@ function bjt_import_nodeapi(&$node, $op, $a3 = NULL, $a4 = NUL){
         return $return;
       }
       break;
+    case 'view':
+      if ($node->type == 'page'){
+        //die(print_r($node->content,1));
+        foreach($node->content as $key => &$content){
+          $r = array(
+            '__nr_volume__' => _bjt_node_count(),
+            '__nr_autori__' => _bjt_author_count(),
+            );
+          $content['#value'] = strtr($content['#value'], $r);
+        }
+        //die(print_r($node->content,1));
+
+      }
+      break;
   }
 }
 
@@ -201,6 +215,14 @@ function _filter_nodes_by_lang($nodes, $lang = 'ro'){
 
   }
 
-
   return $return;
 }
+
+function _bjt_node_count(){
+  return (int)db_result(db_query("SELECT COUNT(`nid`) FROM {node} WHERE type='doc'"));
+}
+
+function _bjt_author_count(){
+  return (int)db_result(db_query("SELECT COUNT(DISTINCT(`data_value`)) FROM {bjt_data} WHERE data_name='contributor' OR data_name='creator'"));
+}
+

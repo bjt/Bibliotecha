@@ -48,10 +48,3 @@ function bjt_preprocess_search_result(&$vars, $hook) {
 
 
 
-function _bjt_node_count(){
-  return (int)db_result(db_query("SELECT COUNT(`nid`) FROM {node} WHERE type='doc'"));
-}
-
-function _bjt_author_count(){
-  return (int)db_result(db_query("SELECT COUNT(DISTINCT(`data_value`)) FROM {bjt_data} WHERE data_name='contributor' OR data_name='creator'"));
-}

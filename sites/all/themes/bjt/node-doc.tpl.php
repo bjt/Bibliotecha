@@ -88,7 +88,7 @@ if ($teaser): ?>
 <?php endif; ?>
     <div class="left" style="width: 180px;">
         <ul id=doc-meta>
-            
+
             <li><strong>Data:</strong><br /><?php echo $node->bjt['date'][0]; ?>
             <li><strong>Autori:</strong><br />
                 <?php echo implode('<br />', $node->bjt['creator']); ?>
@@ -98,9 +98,17 @@ if ($teaser): ?>
                 <?php echo implode('<br />', $node->bjt['subject']); ?>
             <li><strong>Cotă:</strong><br />
                 <?php echo $node->bjt['identifier'][0]; ?>
-            
+            <li><a href="<?php echo $node->bjt['teaser']; ?>" rel="download external"><strong>Descarcă Gratuit</strong></a><?php
+            if (strpos( $node->bjt['teaser'], '.djvu' ) ): ?><br />
+                <small style="font-size: 9px;"><a href="http://djvu.org/resources/" target="_blank" rel="external nofollow">Descarcă Cititor DJVU</a> <a href="#ce-este-djvu">?</a></small>
+            <?php endif; ?>
+
         </ul>
     </div>
+    <?php if (strpos( $node->bjt['teaser'], '.djvu' ) ): ?>
+    <div class="clearfix"></div>
+    <div id="ce-este-djvu" style="color: #9c9c9c; margin-top: 30px;">DjVu (pronunţat "déjà vu") este un format digital de document cu o tehnologie avansată de compresie de înaltă performanţă şi valoare. DjVu permite distribuirea pe Internet şi pe DVD a imaginilor cu rezoluţie foarte mare de documente scanate, documente digitale, şi fotografii.</div>
+    <?php endif; ?>
 </div>
 
 
